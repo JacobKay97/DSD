@@ -1,0 +1,10 @@
+
+**** Build of configuration Nios II for project Task5 ****
+
+make all 
+Info: Building ../Task5_bsp/
+make --no-print-directory -C ../Task5_bsp/
+[BSP build complete]
+[Task5 build complete]
+
+**** Build Finished ****

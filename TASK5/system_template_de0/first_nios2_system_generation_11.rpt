@@ -1,0 +1,137 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=H:/Year_3/DSD/system_template_de0/ --output-directory=H:/Year_3/DSD/system_template_de0/first_nios2_system/ --report-file=bsf:H:/Year_3/DSD/system_template_de0/first_nios2_system.bsf --system-info=DEVICE_FAMILY="Cyclone III" --system-info=DEVICE=EP3C16F484C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=H:/Year_3/DSD/system_template_de0/first_nios2_system.qsys
+Progress: Loading system_template_de0/first_nios2_system.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 13.0]
+Progress: Parameterizing module clk_0
+Progress: Adding onchip_mem [altera_avalon_onchip_memory2 13.0.1.99.2]
+Progress: Parameterizing module onchip_mem
+Progress: Adding cpu [altera_nios2_qsys 13.0]
+Progress: Parameterizing module cpu
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module jtag_uart
+Progress: Adding sys_clk_timer [altera_avalon_timer 13.0.1.99.2]
+Progress: Parameterizing module sys_clk_timer
+Progress: Adding sysid [altera_avalon_sysid_qsys 13.0]
+Progress: Parameterizing module sysid
+Progress: Adding led_pio [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module led_pio
+Progress: Adding sdram [altera_avalon_new_sdram_controller 13.0.1.99.2]
+Progress: Parameterizing module sdram
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: first_nios2_system.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: first_nios2_system.sysid: Time stamp will be automatically updated when this component is generated.
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=H:/Year_3/DSD/system_template_de0/ --output-directory=H:/Year_3/DSD/system_template_de0/first_nios2_system/synthesis/ --file-set=QUARTUS_SYNTH --report-file=sopcinfo:H:/Year_3/DSD/system_template_de0/first_nios2_system.sopcinfo --report-file=html:H:/Year_3/DSD/system_template_de0/first_nios2_system.html --report-file=qip:H:/Year_3/DSD/system_template_de0/first_nios2_system/synthesis/first_nios2_system.qip --report-file=cmp:H:/Year_3/DSD/system_template_de0/first_nios2_system.cmp --report-file=svd --system-info=DEVICE_FAMILY="Cyclone III" --system-info=DEVICE=EP3C16F484C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=H:/Year_3/DSD/system_template_de0/first_nios2_system.qsys --language=VERILOG
+Progress: Loading system_template_de0/first_nios2_system.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 13.0]
+Progress: Parameterizing module clk_0
+Progress: Adding onchip_mem [altera_avalon_onchip_memory2 13.0.1.99.2]
+Progress: Parameterizing module onchip_mem
+Progress: Adding cpu [altera_nios2_qsys 13.0]
+Progress: Parameterizing module cpu
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module jtag_uart
+Progress: Adding sys_clk_timer [altera_avalon_timer 13.0.1.99.2]
+Progress: Parameterizing module sys_clk_timer
+Progress: Adding sysid [altera_avalon_sysid_qsys 13.0]
+Progress: Parameterizing module sysid
+Progress: Adding led_pio [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module led_pio
+Progress: Adding sdram [altera_avalon_new_sdram_controller 13.0.1.99.2]
+Progress: Parameterizing module sdram
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: first_nios2_system.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: first_nios2_system.sysid: Time stamp will be automatically updated when this component is generated.
+Info: first_nios2_system: Generating first_nios2_system "first_nios2_system" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 8 modules, 26 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_translator_transform: After transform: 17 modules, 53 connections
+Info: merlin_domain_transform: After transform: 35 modules, 144 connections
+Info: merlin_router_transform: After transform: 44 modules, 171 connections
+Info: merlin_traffic_limiter_transform: After transform: 45 modules, 175 connections
+Info: merlin_burst_transform: After transform: 46 modules, 178 connections
+Info: reset_adaptation_transform: After transform: 47 modules, 180 connections
+Info: merlin_network_to_switch_transform: After transform: 64 modules, 218 connections
+Info: merlin_width_transform: After transform: 66 modules, 224 connections
+Info: limiter_update_transform: After transform: 66 modules, 225 connections
+Info: merlin_mm_transform: After transform: 66 modules, 225 connections
+Info: merlin_interrupt_mapper_transform: After transform: 67 modules, 228 connections
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: first_nios2_system: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Error: Generation stopped, 62 or more modules remaining
+Info: first_nios2_system: Done first_nios2_system" with 30 modules, 1 files, 330579 bytes
+Error: ip-generate failed with exit code 1: 1 Error, 64 Warnings
+Info: Stopping: Create HDL design files for synthesis

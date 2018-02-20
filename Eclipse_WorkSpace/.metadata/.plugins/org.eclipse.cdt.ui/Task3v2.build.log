@@ -1,0 +1,10 @@
+
+**** Build of configuration Nios II for project Task3v2 ****
+
+make all 
+Info: Building ../Task3v2_bsp/
+make --no-print-directory -C ../Task3v2_bsp/
+[BSP build complete]
+[Task3v2 build complete]
+
+**** Build Finished ****
