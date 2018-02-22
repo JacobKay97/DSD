@@ -1,0 +1,10 @@
+
+**** Build of configuration Nios II for project Task6PipelineTest ****
+
+make all 
+Info: Building ../Task6PipelineTest_bsp/
+make --no-print-directory -C ../Task6PipelineTest_bsp/
+[BSP build complete]
+[Task6PipelineTest build complete]
+
+**** Build Finished ****
