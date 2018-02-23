@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="34" version="2.0">
+<workbench progressCount="26" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="26" y="26">
 <fastViewData fastViewLocation="1024"/>
@@ -30,18 +30,13 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="1"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="system.h" partName="system.h" path="H:/Year_3/DSD/system_template_de0/software/Task6PipelineTest_bsp/system.h" title="system.h" tooltip="Task6PipelineTest_bsp/system.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Task6PipelineTest_bsp/system.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="309" selectionOffset="3972" selectionTopPixel="1626"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="hello_world.c" partName="hello_world.c" path="H:/Year_3/DSD/system_template_de0/software/Task6PipelineTest/hello_world.c" title="hello_world.c" tooltip="Task6PipelineTest/hello_world.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Task6PipelineTest/hello_world.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2343" selectionTopPixel="1314"/>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="hello_world.c" partName="hello_world.c" path="H:/Year_3/DSD/system_template_de0/software/Task6TestCases/hello_world.c" title="hello_world.c" tooltip="Task6TestCases/hello_world.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Task6TestCases/hello_world.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1897" selectionTopPixel="480"/>
 </editor>
 </editors>
 <views>
@@ -83,11 +78,6 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Warnings (1 item)"/>
-<category IMemento.internal.id="Warnings"/>
-<category IMemento.internal.id="Errors"/>
-</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="281" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="492"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -287,12 +277,12 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.16485508" ratioLeft="273" ratioRight="1383" relationship="2" relative="topLeft"/>
 <info folder="true" part="bottom" ratio="0.73175967" ratioLeft="682" ratioRight="250" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView:USB-Blaster on localhost [USB-0].1.0" appearance="2" expanded="2">
+<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
-<page content="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView:USB-Blaster on localhost [USB-0].1.0" label="Nios II Console"/>
+<page content="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView:USB-Blaster on localhost [USB-0].1.0" label="LabelNotFound"/>
 <page content="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView:*" label="LabelNotFound"/>
 <page content="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
@@ -300,7 +290,6 @@
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
-<part id="4"/>
 </presentation>
 </folder>
 </info>
@@ -412,37 +401,11 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Task6PipelineTest/hello_world.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Task6TestCases/hello_world.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Task6PipelineTest/hello_world.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Task6PipelineTest_bsp/system.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Task6PipelineTest/hello_world.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/fuckdsjfndk/hello_world.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Task6TestCases/hello_world.c"/>
 </editors>
-<item historyLabel="hello_world.c" index="0">
-<position info="not_deleted" x="734" y="0"/>
-</item>
-<item historyLabel="system.h" index="1">
-<position info="not_deleted" x="4222" y="0"/>
-</item>
-<item historyLabel="hello_world.c" index="0">
-<position info="not_deleted" x="734" y="0"/>
-</item>
-<item historyLabel="system.h" index="1">
-<position/>
-</item>
-<item historyLabel="hello_world.c" index="0">
-<position info="not_deleted" x="131" y="0"/>
-</item>
-<item historyLabel="system.h" index="1">
-<position/>
-</item>
-<item historyLabel="hello_world.c" index="0">
-<position info="not_deleted" x="819" y="0"/>
-</item>
-<item historyLabel="system.h" index="1">
-<position/>
-</item>
-<item historyLabel="hello_world.c" index="0">
-<position info="not_deleted" x="830" y="0"/>
-</item>
-<item historyLabel="system.h" index="1">
-<position/>
-</item>
 <item historyLabel="hello_world.c" index="0">
 <position info="not_deleted" x="830" y="0"/>
 </item>
@@ -560,8 +523,38 @@
 <item historyLabel="hello_world.c" index="6">
 <position/>
 </item>
-<item active="true" historyLabel="hello_world.c" index="6">
-<position info="not_deleted" x="2939" y="0"/>
+<item historyLabel="hello_world.c" index="6">
+<position info="not_deleted" x="2343" y="0"/>
+</item>
+<item historyLabel="system.h" index="7">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="hello_world.c" index="8">
+<position info="not_deleted" x="0" y="3651"/>
+</item>
+<item historyLabel="hello_world.c" index="9">
+<position info="not_deleted" x="2496" y="0"/>
+</item>
+<item historyLabel="hello_world.c" index="8">
+<position info="not_deleted" x="0" y="3651"/>
+</item>
+<item historyLabel="hello_world.c" index="9">
+<position info="not_deleted" x="2246" y="0"/>
+</item>
+<item historyLabel="system.h" index="7">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="hello_world.c" index="9">
+<position info="not_deleted" x="2246" y="0"/>
+</item>
+<item historyLabel="hello_world.c" index="9">
+<position info="not_deleted" x="2128" y="0"/>
+</item>
+<item historyLabel="system.h" index="7">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item active="true" historyLabel="hello_world.c" index="10">
+<position info="not_deleted" x="0" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -584,11 +577,14 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="hello_world.c" tooltip="Task6PipelineTest/hello_world.c">
-<persistable path="/Task6PipelineTest/hello_world.c"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="hello_world.c" tooltip="Task6TestCases/hello_world.c">
 <persistable path="/Task6TestCases/hello_world.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="hello_world.c" tooltip="fuckdsjfndk/hello_world.c">
+<persistable path="/fuckdsjfndk/hello_world.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="hello_world.c" tooltip="Task6PipelineTest/hello_world.c">
+<persistable path="/Task6PipelineTest/hello_world.c"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="system.h" tooltip="Task6PipelineTest_bsp/system.h">
 <persistable path="/Task6PipelineTest_bsp/system.h"/>
@@ -625,9 +621,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="alt_putstr.c" tooltip="hello_world_bsp/HAL/src/alt_putstr.c">
 <persistable path="/hello_world_bsp/HAL/src/alt_putstr.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="alt_stdio.h" tooltip="hello_world_bsp/HAL/inc/sys/alt_stdio.h">
-<persistable path="/hello_world_bsp/HAL/inc/sys/alt_stdio.h"/>
 </file>
 </mruList>
 </workbench>
