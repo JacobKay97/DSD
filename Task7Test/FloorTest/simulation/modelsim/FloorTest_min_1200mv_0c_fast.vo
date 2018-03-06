@@ -1,0 +1,1047 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II 64-Bit"
+// VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version"
+
+// DATE "03/06/2018 15:04:48"
+
+// 
+// Device: Altera EP3C16F484C6 Package FBGA484
+// 
+
+// 
+// This Verilog file should be used for ModelSim (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module FloorTest (
+	DRAM_DQ,
+	oDRAM_CAS_N,
+	oDRAM_CKE,
+	oDRAM_CS_N,
+	oDRAM_RAS_N,
+	oDRAM_WE_N,
+	oDRAM_CLK,
+	oDRAM_A,
+	oDRAM_BA,
+	oDRAM_DQM,
+	oLEDG,
+	iCLK_50);
+inout 	[15:0] DRAM_DQ;
+output 	oDRAM_CAS_N;
+output 	oDRAM_CKE;
+output 	oDRAM_CS_N;
+output 	oDRAM_RAS_N;
+output 	oDRAM_WE_N;
+output 	oDRAM_CLK;
+output 	[11:0] oDRAM_A;
+output 	[1:0] oDRAM_BA;
+output 	[1:0] oDRAM_DQM;
+output 	[7:0] oLEDG;
+input 	iCLK_50;
+
+// Design Ports Information
+// oDRAM_CAS_N	=>  Location: PIN_G8,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// oDRAM_CKE	=>  Location: PIN_E6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// oDRAM_CS_N	=>  Location: PIN_G7,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// oDRAM_RAS_N	=>  Location: PIN_F7,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// oDRAM_WE_N	=>  Location: PIN_D6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// oDRAM_CLK	=>  Location: PIN_E5,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// oDRAM_A[11]	=>  Location: PIN_A7,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// oDRAM_A[10]	=>  Location: PIN_B4,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// oDRAM_A[9]	=>  Location: PIN_B7,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// oDRAM_A[8]	=>  Location: PIN_C7,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// oDRAM_A[7]	=>  Location: PIN_A6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// oDRAM_A[6]	=>  Location: PIN_B6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// oDRAM_A[5]	=>  Location: PIN_C6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// oDRAM_A[4]	=>  Location: PIN_A5,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// oDRAM_A[3]	=>  Location: PIN_C3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// oDRAM_A[2]	=>  Location: PIN_B3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// oDRAM_A[1]	=>  Location: PIN_A3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// oDRAM_A[0]	=>  Location: PIN_C4,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// oDRAM_BA[1]	=>  Location: PIN_A4,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// oDRAM_BA[0]	=>  Location: PIN_B5,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// oDRAM_DQM[1]	=>  Location: PIN_B8,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// oDRAM_DQM[0]	=>  Location: PIN_E7,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// oLEDG[7]	=>  Location: PIN_C2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// oLEDG[6]	=>  Location: PIN_C1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// oLEDG[5]	=>  Location: PIN_E1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// oLEDG[4]	=>  Location: PIN_F2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// oLEDG[3]	=>  Location: PIN_H1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// oLEDG[2]	=>  Location: PIN_J3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// oLEDG[1]	=>  Location: PIN_J2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// oLEDG[0]	=>  Location: PIN_J1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// iCLK_50	=>  Location: PIN_G21,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// DRAM_DQ[15]	=>  Location: PIN_F10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// DRAM_DQ[14]	=>  Location: PIN_E10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// DRAM_DQ[13]	=>  Location: PIN_A10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// DRAM_DQ[12]	=>  Location: PIN_B10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// DRAM_DQ[11]	=>  Location: PIN_C10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// DRAM_DQ[10]	=>  Location: PIN_A9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// DRAM_DQ[9]	=>  Location: PIN_B9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// DRAM_DQ[8]	=>  Location: PIN_A8,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// DRAM_DQ[7]	=>  Location: PIN_F8,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// DRAM_DQ[6]	=>  Location: PIN_H9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// DRAM_DQ[5]	=>  Location: PIN_G9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// DRAM_DQ[4]	=>  Location: PIN_F9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// DRAM_DQ[3]	=>  Location: PIN_E9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// DRAM_DQ[2]	=>  Location: PIN_H10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// DRAM_DQ[1]	=>  Location: PIN_G10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// DRAM_DQ[0]	=>  Location: PIN_D10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+// synopsys translate_off
+initial $sdf_annotate("FloorTest_min_1200mv_0c_v_fast.sdo");
+// synopsys translate_on
+
+wire \iCLK_50~input_o ;
+wire \DRAM_DQ[15]~input_o ;
+wire \DRAM_DQ[14]~input_o ;
+wire \DRAM_DQ[13]~input_o ;
+wire \DRAM_DQ[12]~input_o ;
+wire \DRAM_DQ[11]~input_o ;
+wire \DRAM_DQ[10]~input_o ;
+wire \DRAM_DQ[9]~input_o ;
+wire \DRAM_DQ[8]~input_o ;
+wire \DRAM_DQ[7]~input_o ;
+wire \DRAM_DQ[6]~input_o ;
+wire \DRAM_DQ[5]~input_o ;
+wire \DRAM_DQ[4]~input_o ;
+wire \DRAM_DQ[3]~input_o ;
+wire \DRAM_DQ[2]~input_o ;
+wire \DRAM_DQ[1]~input_o ;
+wire \DRAM_DQ[0]~input_o ;
+wire \DRAM_DQ[15]~output_o ;
+wire \DRAM_DQ[14]~output_o ;
+wire \DRAM_DQ[13]~output_o ;
+wire \DRAM_DQ[12]~output_o ;
+wire \DRAM_DQ[11]~output_o ;
+wire \DRAM_DQ[10]~output_o ;
+wire \DRAM_DQ[9]~output_o ;
+wire \DRAM_DQ[8]~output_o ;
+wire \DRAM_DQ[7]~output_o ;
+wire \DRAM_DQ[6]~output_o ;
+wire \DRAM_DQ[5]~output_o ;
+wire \DRAM_DQ[4]~output_o ;
+wire \DRAM_DQ[3]~output_o ;
+wire \DRAM_DQ[2]~output_o ;
+wire \DRAM_DQ[1]~output_o ;
+wire \DRAM_DQ[0]~output_o ;
+wire \oDRAM_CAS_N~output_o ;
+wire \oDRAM_CKE~output_o ;
+wire \oDRAM_CS_N~output_o ;
+wire \oDRAM_RAS_N~output_o ;
+wire \oDRAM_WE_N~output_o ;
+wire \oDRAM_CLK~output_o ;
+wire \oDRAM_A[11]~output_o ;
+wire \oDRAM_A[10]~output_o ;
+wire \oDRAM_A[9]~output_o ;
+wire \oDRAM_A[8]~output_o ;
+wire \oDRAM_A[7]~output_o ;
+wire \oDRAM_A[6]~output_o ;
+wire \oDRAM_A[5]~output_o ;
+wire \oDRAM_A[4]~output_o ;
+wire \oDRAM_A[3]~output_o ;
+wire \oDRAM_A[2]~output_o ;
+wire \oDRAM_A[1]~output_o ;
+wire \oDRAM_A[0]~output_o ;
+wire \oDRAM_BA[1]~output_o ;
+wire \oDRAM_BA[0]~output_o ;
+wire \oDRAM_DQM[1]~output_o ;
+wire \oDRAM_DQM[0]~output_o ;
+wire \oLEDG[7]~output_o ;
+wire \oLEDG[6]~output_o ;
+wire \oLEDG[5]~output_o ;
+wire \oLEDG[4]~output_o ;
+wire \oLEDG[3]~output_o ;
+wire \oLEDG[2]~output_o ;
+wire \oLEDG[1]~output_o ;
+wire \oLEDG[0]~output_o ;
+
+
+// Location: IOOBUF_X7_Y29_N30
+cycloneiii_io_obuf \DRAM_DQ[15]~output (
+	.i(vcc),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\DRAM_DQ[15]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \DRAM_DQ[15]~output .bus_hold = "false";
+defparam \DRAM_DQ[15]~output .open_drain_output = "true";
+// synopsys translate_on
+
+// Location: IOOBUF_X16_Y29_N9
+cycloneiii_io_obuf \DRAM_DQ[14]~output (
+	.i(vcc),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\DRAM_DQ[14]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \DRAM_DQ[14]~output .bus_hold = "false";
+defparam \DRAM_DQ[14]~output .open_drain_output = "true";
+// synopsys translate_on
+
+// Location: IOOBUF_X16_Y29_N16
+cycloneiii_io_obuf \DRAM_DQ[13]~output (
+	.i(vcc),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\DRAM_DQ[13]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \DRAM_DQ[13]~output .bus_hold = "false";
+defparam \DRAM_DQ[13]~output .open_drain_output = "true";
+// synopsys translate_on
+
+// Location: IOOBUF_X16_Y29_N23
+cycloneiii_io_obuf \DRAM_DQ[12]~output (
+	.i(vcc),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\DRAM_DQ[12]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \DRAM_DQ[12]~output .bus_hold = "false";
+defparam \DRAM_DQ[12]~output .open_drain_output = "true";
+// synopsys translate_on
+
+// Location: IOOBUF_X14_Y29_N9
+cycloneiii_io_obuf \DRAM_DQ[11]~output (
+	.i(vcc),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\DRAM_DQ[11]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \DRAM_DQ[11]~output .bus_hold = "false";
+defparam \DRAM_DQ[11]~output .open_drain_output = "true";
+// synopsys translate_on
+
+// Location: IOOBUF_X16_Y29_N30
+cycloneiii_io_obuf \DRAM_DQ[10]~output (
+	.i(vcc),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\DRAM_DQ[10]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \DRAM_DQ[10]~output .bus_hold = "false";
+defparam \DRAM_DQ[10]~output .open_drain_output = "true";
+// synopsys translate_on
+
+// Location: IOOBUF_X14_Y29_N2
+cycloneiii_io_obuf \DRAM_DQ[9]~output (
+	.i(vcc),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\DRAM_DQ[9]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \DRAM_DQ[9]~output .bus_hold = "false";
+defparam \DRAM_DQ[9]~output .open_drain_output = "true";
+// synopsys translate_on
+
+// Location: IOOBUF_X14_Y29_N23
+cycloneiii_io_obuf \DRAM_DQ[8]~output (
+	.i(vcc),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\DRAM_DQ[8]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \DRAM_DQ[8]~output .bus_hold = "false";
+defparam \DRAM_DQ[8]~output .open_drain_output = "true";
+// synopsys translate_on
+
+// Location: IOOBUF_X5_Y29_N23
+cycloneiii_io_obuf \DRAM_DQ[7]~output (
+	.i(vcc),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\DRAM_DQ[7]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \DRAM_DQ[7]~output .bus_hold = "false";
+defparam \DRAM_DQ[7]~output .open_drain_output = "true";
+// synopsys translate_on
+
+// Location: IOOBUF_X7_Y29_N2
+cycloneiii_io_obuf \DRAM_DQ[6]~output (
+	.i(vcc),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\DRAM_DQ[6]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \DRAM_DQ[6]~output .bus_hold = "false";
+defparam \DRAM_DQ[6]~output .open_drain_output = "true";
+// synopsys translate_on
+
+// Location: IOOBUF_X9_Y29_N23
+cycloneiii_io_obuf \DRAM_DQ[5]~output (
+	.i(vcc),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\DRAM_DQ[5]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \DRAM_DQ[5]~output .bus_hold = "false";
+defparam \DRAM_DQ[5]~output .open_drain_output = "true";
+// synopsys translate_on
+
+// Location: IOOBUF_X7_Y29_N23
+cycloneiii_io_obuf \DRAM_DQ[4]~output (
+	.i(vcc),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\DRAM_DQ[4]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \DRAM_DQ[4]~output .bus_hold = "false";
+defparam \DRAM_DQ[4]~output .open_drain_output = "true";
+// synopsys translate_on
+
+// Location: IOOBUF_X11_Y29_N30
+cycloneiii_io_obuf \DRAM_DQ[3]~output (
+	.i(vcc),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\DRAM_DQ[3]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \DRAM_DQ[3]~output .bus_hold = "false";
+defparam \DRAM_DQ[3]~output .open_drain_output = "true";
+// synopsys translate_on
+
+// Location: IOOBUF_X9_Y29_N30
+cycloneiii_io_obuf \DRAM_DQ[2]~output (
+	.i(vcc),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\DRAM_DQ[2]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \DRAM_DQ[2]~output .bus_hold = "false";
+defparam \DRAM_DQ[2]~output .open_drain_output = "true";
+// synopsys translate_on
+
+// Location: IOOBUF_X9_Y29_N16
+cycloneiii_io_obuf \DRAM_DQ[1]~output (
+	.i(vcc),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\DRAM_DQ[1]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \DRAM_DQ[1]~output .bus_hold = "false";
+defparam \DRAM_DQ[1]~output .open_drain_output = "true";
+// synopsys translate_on
+
+// Location: IOOBUF_X16_Y29_N2
+cycloneiii_io_obuf \DRAM_DQ[0]~output (
+	.i(vcc),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\DRAM_DQ[0]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \DRAM_DQ[0]~output .bus_hold = "false";
+defparam \DRAM_DQ[0]~output .open_drain_output = "true";
+// synopsys translate_on
+
+// Location: IOOBUF_X5_Y29_N30
+cycloneiii_io_obuf \oDRAM_CAS_N~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\oDRAM_CAS_N~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \oDRAM_CAS_N~output .bus_hold = "false";
+defparam \oDRAM_CAS_N~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X1_Y29_N23
+cycloneiii_io_obuf \oDRAM_CKE~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\oDRAM_CKE~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \oDRAM_CKE~output .bus_hold = "false";
+defparam \oDRAM_CKE~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X1_Y29_N16
+cycloneiii_io_obuf \oDRAM_CS_N~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\oDRAM_CS_N~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \oDRAM_CS_N~output .bus_hold = "false";
+defparam \oDRAM_CS_N~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X1_Y29_N9
+cycloneiii_io_obuf \oDRAM_RAS_N~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\oDRAM_RAS_N~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \oDRAM_RAS_N~output .bus_hold = "false";
+defparam \oDRAM_RAS_N~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X3_Y29_N16
+cycloneiii_io_obuf \oDRAM_WE_N~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\oDRAM_WE_N~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \oDRAM_WE_N~output .bus_hold = "false";
+defparam \oDRAM_WE_N~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X1_Y29_N30
+cycloneiii_io_obuf \oDRAM_CLK~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\oDRAM_CLK~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \oDRAM_CLK~output .bus_hold = "false";
+defparam \oDRAM_CLK~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X11_Y29_N2
+cycloneiii_io_obuf \oDRAM_A[11]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\oDRAM_A[11]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \oDRAM_A[11]~output .bus_hold = "false";
+defparam \oDRAM_A[11]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X5_Y29_N16
+cycloneiii_io_obuf \oDRAM_A[10]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\oDRAM_A[10]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \oDRAM_A[10]~output .bus_hold = "false";
+defparam \oDRAM_A[10]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X11_Y29_N9
+cycloneiii_io_obuf \oDRAM_A[9]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\oDRAM_A[9]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \oDRAM_A[9]~output .bus_hold = "false";
+defparam \oDRAM_A[9]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X9_Y29_N9
+cycloneiii_io_obuf \oDRAM_A[8]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\oDRAM_A[8]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \oDRAM_A[8]~output .bus_hold = "false";
+defparam \oDRAM_A[8]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X11_Y29_N16
+cycloneiii_io_obuf \oDRAM_A[7]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\oDRAM_A[7]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \oDRAM_A[7]~output .bus_hold = "false";
+defparam \oDRAM_A[7]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X11_Y29_N23
+cycloneiii_io_obuf \oDRAM_A[6]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\oDRAM_A[6]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \oDRAM_A[6]~output .bus_hold = "false";
+defparam \oDRAM_A[6]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X5_Y29_N2
+cycloneiii_io_obuf \oDRAM_A[5]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\oDRAM_A[5]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \oDRAM_A[5]~output .bus_hold = "false";
+defparam \oDRAM_A[5]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X7_Y29_N9
+cycloneiii_io_obuf \oDRAM_A[4]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\oDRAM_A[4]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \oDRAM_A[4]~output .bus_hold = "false";
+defparam \oDRAM_A[4]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X3_Y29_N30
+cycloneiii_io_obuf \oDRAM_A[3]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\oDRAM_A[3]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \oDRAM_A[3]~output .bus_hold = "false";
+defparam \oDRAM_A[3]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X3_Y29_N9
+cycloneiii_io_obuf \oDRAM_A[2]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\oDRAM_A[2]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \oDRAM_A[2]~output .bus_hold = "false";
+defparam \oDRAM_A[2]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X3_Y29_N2
+cycloneiii_io_obuf \oDRAM_A[1]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\oDRAM_A[1]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \oDRAM_A[1]~output .bus_hold = "false";
+defparam \oDRAM_A[1]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X1_Y29_N2
+cycloneiii_io_obuf \oDRAM_A[0]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\oDRAM_A[0]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \oDRAM_A[0]~output .bus_hold = "false";
+defparam \oDRAM_A[0]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X5_Y29_N9
+cycloneiii_io_obuf \oDRAM_BA[1]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\oDRAM_BA[1]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \oDRAM_BA[1]~output .bus_hold = "false";
+defparam \oDRAM_BA[1]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X7_Y29_N16
+cycloneiii_io_obuf \oDRAM_BA[0]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\oDRAM_BA[0]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \oDRAM_BA[0]~output .bus_hold = "false";
+defparam \oDRAM_BA[0]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X14_Y29_N30
+cycloneiii_io_obuf \oDRAM_DQM[1]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\oDRAM_DQM[1]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \oDRAM_DQM[1]~output .bus_hold = "false";
+defparam \oDRAM_DQM[1]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X3_Y29_N23
+cycloneiii_io_obuf \oDRAM_DQM[0]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\oDRAM_DQM[0]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \oDRAM_DQM[0]~output .bus_hold = "false";
+defparam \oDRAM_DQM[0]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X0_Y26_N16
+cycloneiii_io_obuf \oLEDG[7]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\oLEDG[7]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \oLEDG[7]~output .bus_hold = "false";
+defparam \oLEDG[7]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X0_Y26_N23
+cycloneiii_io_obuf \oLEDG[6]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\oLEDG[6]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \oLEDG[6]~output .bus_hold = "false";
+defparam \oLEDG[6]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X0_Y24_N16
+cycloneiii_io_obuf \oLEDG[5]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\oLEDG[5]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \oLEDG[5]~output .bus_hold = "false";
+defparam \oLEDG[5]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X0_Y24_N23
+cycloneiii_io_obuf \oLEDG[4]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\oLEDG[4]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \oLEDG[4]~output .bus_hold = "false";
+defparam \oLEDG[4]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X0_Y21_N16
+cycloneiii_io_obuf \oLEDG[3]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\oLEDG[3]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \oLEDG[3]~output .bus_hold = "false";
+defparam \oLEDG[3]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X0_Y21_N23
+cycloneiii_io_obuf \oLEDG[2]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\oLEDG[2]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \oLEDG[2]~output .bus_hold = "false";
+defparam \oLEDG[2]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X0_Y20_N2
+cycloneiii_io_obuf \oLEDG[1]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\oLEDG[1]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \oLEDG[1]~output .bus_hold = "false";
+defparam \oLEDG[1]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X0_Y20_N9
+cycloneiii_io_obuf \oLEDG[0]~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\oLEDG[0]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \oLEDG[0]~output .bus_hold = "false";
+defparam \oLEDG[0]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X41_Y15_N1
+cycloneiii_io_ibuf \iCLK_50~input (
+	.i(iCLK_50),
+	.ibar(gnd),
+	.o(\iCLK_50~input_o ));
+// synopsys translate_off
+defparam \iCLK_50~input .bus_hold = "false";
+defparam \iCLK_50~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X7_Y29_N29
+cycloneiii_io_ibuf \DRAM_DQ[15]~input (
+	.i(DRAM_DQ[15]),
+	.ibar(gnd),
+	.o(\DRAM_DQ[15]~input_o ));
+// synopsys translate_off
+defparam \DRAM_DQ[15]~input .bus_hold = "false";
+defparam \DRAM_DQ[15]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X16_Y29_N8
+cycloneiii_io_ibuf \DRAM_DQ[14]~input (
+	.i(DRAM_DQ[14]),
+	.ibar(gnd),
+	.o(\DRAM_DQ[14]~input_o ));
+// synopsys translate_off
+defparam \DRAM_DQ[14]~input .bus_hold = "false";
+defparam \DRAM_DQ[14]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X16_Y29_N15
+cycloneiii_io_ibuf \DRAM_DQ[13]~input (
+	.i(DRAM_DQ[13]),
+	.ibar(gnd),
+	.o(\DRAM_DQ[13]~input_o ));
+// synopsys translate_off
+defparam \DRAM_DQ[13]~input .bus_hold = "false";
+defparam \DRAM_DQ[13]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X16_Y29_N22
+cycloneiii_io_ibuf \DRAM_DQ[12]~input (
+	.i(DRAM_DQ[12]),
+	.ibar(gnd),
+	.o(\DRAM_DQ[12]~input_o ));
+// synopsys translate_off
+defparam \DRAM_DQ[12]~input .bus_hold = "false";
+defparam \DRAM_DQ[12]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X14_Y29_N8
+cycloneiii_io_ibuf \DRAM_DQ[11]~input (
+	.i(DRAM_DQ[11]),
+	.ibar(gnd),
+	.o(\DRAM_DQ[11]~input_o ));
+// synopsys translate_off
+defparam \DRAM_DQ[11]~input .bus_hold = "false";
+defparam \DRAM_DQ[11]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X16_Y29_N29
+cycloneiii_io_ibuf \DRAM_DQ[10]~input (
+	.i(DRAM_DQ[10]),
+	.ibar(gnd),
+	.o(\DRAM_DQ[10]~input_o ));
+// synopsys translate_off
+defparam \DRAM_DQ[10]~input .bus_hold = "false";
+defparam \DRAM_DQ[10]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X14_Y29_N1
+cycloneiii_io_ibuf \DRAM_DQ[9]~input (
+	.i(DRAM_DQ[9]),
+	.ibar(gnd),
+	.o(\DRAM_DQ[9]~input_o ));
+// synopsys translate_off
+defparam \DRAM_DQ[9]~input .bus_hold = "false";
+defparam \DRAM_DQ[9]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X14_Y29_N22
+cycloneiii_io_ibuf \DRAM_DQ[8]~input (
+	.i(DRAM_DQ[8]),
+	.ibar(gnd),
+	.o(\DRAM_DQ[8]~input_o ));
+// synopsys translate_off
+defparam \DRAM_DQ[8]~input .bus_hold = "false";
+defparam \DRAM_DQ[8]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X5_Y29_N22
+cycloneiii_io_ibuf \DRAM_DQ[7]~input (
+	.i(DRAM_DQ[7]),
+	.ibar(gnd),
+	.o(\DRAM_DQ[7]~input_o ));
+// synopsys translate_off
+defparam \DRAM_DQ[7]~input .bus_hold = "false";
+defparam \DRAM_DQ[7]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X7_Y29_N1
+cycloneiii_io_ibuf \DRAM_DQ[6]~input (
+	.i(DRAM_DQ[6]),
+	.ibar(gnd),
+	.o(\DRAM_DQ[6]~input_o ));
+// synopsys translate_off
+defparam \DRAM_DQ[6]~input .bus_hold = "false";
+defparam \DRAM_DQ[6]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X9_Y29_N22
+cycloneiii_io_ibuf \DRAM_DQ[5]~input (
+	.i(DRAM_DQ[5]),
+	.ibar(gnd),
+	.o(\DRAM_DQ[5]~input_o ));
+// synopsys translate_off
+defparam \DRAM_DQ[5]~input .bus_hold = "false";
+defparam \DRAM_DQ[5]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X7_Y29_N22
+cycloneiii_io_ibuf \DRAM_DQ[4]~input (
+	.i(DRAM_DQ[4]),
+	.ibar(gnd),
+	.o(\DRAM_DQ[4]~input_o ));
+// synopsys translate_off
+defparam \DRAM_DQ[4]~input .bus_hold = "false";
+defparam \DRAM_DQ[4]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X11_Y29_N29
+cycloneiii_io_ibuf \DRAM_DQ[3]~input (
+	.i(DRAM_DQ[3]),
+	.ibar(gnd),
+	.o(\DRAM_DQ[3]~input_o ));
+// synopsys translate_off
+defparam \DRAM_DQ[3]~input .bus_hold = "false";
+defparam \DRAM_DQ[3]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X9_Y29_N29
+cycloneiii_io_ibuf \DRAM_DQ[2]~input (
+	.i(DRAM_DQ[2]),
+	.ibar(gnd),
+	.o(\DRAM_DQ[2]~input_o ));
+// synopsys translate_off
+defparam \DRAM_DQ[2]~input .bus_hold = "false";
+defparam \DRAM_DQ[2]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X9_Y29_N15
+cycloneiii_io_ibuf \DRAM_DQ[1]~input (
+	.i(DRAM_DQ[1]),
+	.ibar(gnd),
+	.o(\DRAM_DQ[1]~input_o ));
+// synopsys translate_off
+defparam \DRAM_DQ[1]~input .bus_hold = "false";
+defparam \DRAM_DQ[1]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X16_Y29_N1
+cycloneiii_io_ibuf \DRAM_DQ[0]~input (
+	.i(DRAM_DQ[0]),
+	.ibar(gnd),
+	.o(\DRAM_DQ[0]~input_o ));
+// synopsys translate_off
+defparam \DRAM_DQ[0]~input .bus_hold = "false";
+defparam \DRAM_DQ[0]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+assign oDRAM_CAS_N = \oDRAM_CAS_N~output_o ;
+
+assign oDRAM_CKE = \oDRAM_CKE~output_o ;
+
+assign oDRAM_CS_N = \oDRAM_CS_N~output_o ;
+
+assign oDRAM_RAS_N = \oDRAM_RAS_N~output_o ;
+
+assign oDRAM_WE_N = \oDRAM_WE_N~output_o ;
+
+assign oDRAM_CLK = \oDRAM_CLK~output_o ;
+
+assign oDRAM_A[11] = \oDRAM_A[11]~output_o ;
+
+assign oDRAM_A[10] = \oDRAM_A[10]~output_o ;
+
+assign oDRAM_A[9] = \oDRAM_A[9]~output_o ;
+
+assign oDRAM_A[8] = \oDRAM_A[8]~output_o ;
+
+assign oDRAM_A[7] = \oDRAM_A[7]~output_o ;
+
+assign oDRAM_A[6] = \oDRAM_A[6]~output_o ;
+
+assign oDRAM_A[5] = \oDRAM_A[5]~output_o ;
+
+assign oDRAM_A[4] = \oDRAM_A[4]~output_o ;
+
+assign oDRAM_A[3] = \oDRAM_A[3]~output_o ;
+
+assign oDRAM_A[2] = \oDRAM_A[2]~output_o ;
+
+assign oDRAM_A[1] = \oDRAM_A[1]~output_o ;
+
+assign oDRAM_A[0] = \oDRAM_A[0]~output_o ;
+
+assign oDRAM_BA[1] = \oDRAM_BA[1]~output_o ;
+
+assign oDRAM_BA[0] = \oDRAM_BA[0]~output_o ;
+
+assign oDRAM_DQM[1] = \oDRAM_DQM[1]~output_o ;
+
+assign oDRAM_DQM[0] = \oDRAM_DQM[0]~output_o ;
+
+assign oLEDG[7] = \oLEDG[7]~output_o ;
+
+assign oLEDG[6] = \oLEDG[6]~output_o ;
+
+assign oLEDG[5] = \oLEDG[5]~output_o ;
+
+assign oLEDG[4] = \oLEDG[4]~output_o ;
+
+assign oLEDG[3] = \oLEDG[3]~output_o ;
+
+assign oLEDG[2] = \oLEDG[2]~output_o ;
+
+assign oLEDG[1] = \oLEDG[1]~output_o ;
+
+assign oLEDG[0] = \oLEDG[0]~output_o ;
+
+assign DRAM_DQ[15] = \DRAM_DQ[15]~output_o ;
+
+assign DRAM_DQ[14] = \DRAM_DQ[14]~output_o ;
+
+assign DRAM_DQ[13] = \DRAM_DQ[13]~output_o ;
+
+assign DRAM_DQ[12] = \DRAM_DQ[12]~output_o ;
+
+assign DRAM_DQ[11] = \DRAM_DQ[11]~output_o ;
+
+assign DRAM_DQ[10] = \DRAM_DQ[10]~output_o ;
+
+assign DRAM_DQ[9] = \DRAM_DQ[9]~output_o ;
+
+assign DRAM_DQ[8] = \DRAM_DQ[8]~output_o ;
+
+assign DRAM_DQ[7] = \DRAM_DQ[7]~output_o ;
+
+assign DRAM_DQ[6] = \DRAM_DQ[6]~output_o ;
+
+assign DRAM_DQ[5] = \DRAM_DQ[5]~output_o ;
+
+assign DRAM_DQ[4] = \DRAM_DQ[4]~output_o ;
+
+assign DRAM_DQ[3] = \DRAM_DQ[3]~output_o ;
+
+assign DRAM_DQ[2] = \DRAM_DQ[2]~output_o ;
+
+assign DRAM_DQ[1] = \DRAM_DQ[1]~output_o ;
+
+assign DRAM_DQ[0] = \DRAM_DQ[0]~output_o ;
+
+endmodule
