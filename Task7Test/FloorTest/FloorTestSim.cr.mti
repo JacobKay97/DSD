@@ -1,11 +1,107 @@
-//icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/div2.v {1 {vlog -work work //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/div2.v
+//icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/divByn.v {1 {vlog -work work //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/divByn.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module div2
+-- Compiling module divByn
 
 Top level modules:
-	div2
+	divByn
 
-} {} {}} //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/Task7Test/FloorTest/ip/floor.v {1 {vlog -work work {\\icnas1.cc.ic.ac.uk\jk2815\Year_3\DSD\Task7Test\FloorTest\ip\floor.v}
+} {} {}} //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/div2.v {1 {vlog -work work //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/div2.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module divby
+
+Top level modules:
+	divby
+
+} {} {}} //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/FloatAddSub.v {1 {vlog -work work //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/FloatAddSub.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module FloatAddSub
+
+Top level modules:
+	FloatAddSub
+
+} {} {}} //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/cordicWrap.v {1 {vlog -work work //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/cordicWrap.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module cordicWrap
+
+Top level modules:
+	cordicWrap
+
+} {} {}} //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/cordic_dsd.v {1 {vlog -work work //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/cordic_dsd.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module cordic_dsd
+
+Top level modules:
+	cordic_dsd
+
+} {} {}} //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/altfp_convert0.v {1 {vlog -work work //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/altfp_convert0.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module altfp_convert0_altbarrel_shift_luf
+-- Compiling module altfp_convert0_altpriority_encoder_3v7
+-- Compiling module altfp_convert0_altpriority_encoder_3e8
+-- Compiling module altfp_convert0_altpriority_encoder_6v7
+-- Compiling module altfp_convert0_altpriority_encoder_6e8
+-- Compiling module altfp_convert0_altpriority_encoder_bv7
+-- Compiling module altfp_convert0_altpriority_encoder_be8
+-- Compiling module altfp_convert0_altpriority_encoder_r08
+-- Compiling module altfp_convert0_altpriority_encoder_rf8
+-- Compiling module altfp_convert0_altpriority_encoder_qb6
+-- Compiling module altfp_convert0_altfp_convert_v4n
+-- Compiling module altfp_convert0
+
+Top level modules:
+	altfp_convert0
+
+} {} {}} //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/FloatMult.v {1 {vlog -work work //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/FloatMult.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module FloatMult
+
+Top level modules:
+	FloatMult
+
+} {} {}} //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/altfp_mult0.v {1 {vlog -work work //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/altfp_mult0.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module altfp_mult0_altfp_mult_0fo
+-- Compiling module altfp_mult0
+
+Top level modules:
+	altfp_mult0
+
+} {} {}} //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/altfp_add_sub0.v {1 {vlog -work work //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/altfp_add_sub0.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module altfp_add_sub0_altbarrel_shift_q3e
+-- Compiling module altfp_add_sub0_altbarrel_shift_fkb
+-- Compiling module altfp_add_sub0_altpriority_encoder_3v7
+-- Compiling module altfp_add_sub0_altpriority_encoder_3e8
+-- Compiling module altfp_add_sub0_altpriority_encoder_6v7
+-- Compiling module altfp_add_sub0_altpriority_encoder_6e8
+-- Compiling module altfp_add_sub0_altpriority_encoder_bv7
+-- Compiling module altfp_add_sub0_altpriority_encoder_be8
+-- Compiling module altfp_add_sub0_altpriority_encoder_r08
+-- Compiling module altfp_add_sub0_altpriority_encoder_rf8
+-- Compiling module altfp_add_sub0_altpriority_encoder_qb6
+-- Compiling module altfp_add_sub0_altpriority_encoder_nh8
+-- Compiling module altfp_add_sub0_altpriority_encoder_qh8
+-- Compiling module altfp_add_sub0_altpriority_encoder_vh8
+-- Compiling module altfp_add_sub0_altpriority_encoder_fj8
+-- Compiling module altfp_add_sub0_altpriority_encoder_n28
+-- Compiling module altfp_add_sub0_altpriority_encoder_q28
+-- Compiling module altfp_add_sub0_altpriority_encoder_v28
+-- Compiling module altfp_add_sub0_altpriority_encoder_f48
+-- Compiling module altfp_add_sub0_altpriority_encoder_e48
+-- Compiling module altfp_add_sub0_altfp_add_sub_j8k
+-- Compiling module altfp_add_sub0
+
+Top level modules:
+	altfp_add_sub0
+
+} {} {}} //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/Task7.v {1 {vlog -work work //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/Task7.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Task7
+
+Top level modules:
+	Task7
+
+} {} {}} //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/floor.v {1 {vlog -work work //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/floor.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling module floor
 

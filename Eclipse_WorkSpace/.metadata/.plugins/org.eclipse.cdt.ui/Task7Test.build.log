@@ -1,0 +1,10 @@
+
+**** Build of configuration Nios II for project Task7Test ****
+
+make all 
+Info: Building ../Task7Test_bsp/
+make --no-print-directory -C ../Task7Test_bsp/
+[BSP build complete]
+[Task7Test build complete]
+
+**** Build Finished ****

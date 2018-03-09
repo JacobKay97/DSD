@@ -21,7 +21,7 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 216 88 384 104)
+	(rect 224 88 392 104)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "dataa[31..0]" (rect 5 0 64 12)(font "Arial" ))
 	(pt 168 8)
@@ -85,7 +85,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 768 88 944 104)
+	(rect 616 88 792 104)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "results[31..0]" (rect 90 0 154 12)(font "Arial" ))
 	(pt 0 8)
@@ -100,7 +100,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 536 56 720 288)
+	(rect 416 56 600 288)
 	(text "altfp_add_sub0" (rect 50 0 152 16)(font "Arial" (font_size 10)))
 	(text "inst" (rect 8 216 25 228)(font "Arial" ))
 	(port
@@ -155,25 +155,25 @@ applicable agreement for further details.
 	)
 )
 (connector
-	(pt 536 112)
 	(pt 392 112)
+	(pt 416 112)
 	(bus)
 )
 (connector
-	(pt 536 128)
 	(pt 392 128)
+	(pt 416 128)
 )
 (connector
 	(pt 392 160)
-	(pt 536 160)
+	(pt 416 160)
 )
 (connector
-	(pt 720 96)
-	(pt 768 96)
+	(pt 416 96)
+	(pt 392 96)
 	(bus)
 )
 (connector
-	(pt 536 96)
-	(pt 384 96)
+	(pt 600 96)
+	(pt 616 96)
 	(bus)
 )
