@@ -84,12 +84,12 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 Top level modules:
 	FloatAddSub
 
-} {} {}} //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/task7Timer.v {1 {vlog -work work2 //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/task7Timer.v
+} {} {}} //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/cordicWrap.v {1 {vlog -work work2 {\\icnas1.cc.ic.ac.uk\jk2815\Year_3\DSD\system_template_de0\ip\cordicWrap.v}
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module task7Timer
+-- Compiling module cordicWrap
 
 Top level modules:
-	task7Timer
+	cordicWrap
 
 } {} {}} //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/cordic_dsd.v {1 {vlog -work work2 //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/cordic_dsd.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
@@ -98,19 +98,23 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 Top level modules:
 	cordic_dsd
 
-} {} {}} //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/cordicWrap.v {1 {vlog -work work2 //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/cordicWrap.v
+} {} {}} //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/altfp_convert0.v {1 {vlog -work work2 //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/altfp_convert0.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module cordicWrap
+-- Compiling module altfp_convert0_altbarrel_shift_luf
+-- Compiling module altfp_convert0_altpriority_encoder_3v7
+-- Compiling module altfp_convert0_altpriority_encoder_3e8
+-- Compiling module altfp_convert0_altpriority_encoder_6v7
+-- Compiling module altfp_convert0_altpriority_encoder_6e8
+-- Compiling module altfp_convert0_altpriority_encoder_bv7
+-- Compiling module altfp_convert0_altpriority_encoder_be8
+-- Compiling module altfp_convert0_altpriority_encoder_r08
+-- Compiling module altfp_convert0_altpriority_encoder_rf8
+-- Compiling module altfp_convert0_altpriority_encoder_qb6
+-- Compiling module altfp_convert0_altfp_convert_bpn
+-- Compiling module altfp_convert0
 
 Top level modules:
-	cordicWrap
-
-} {} {}} //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/altfp_convert0.v {1 {vlog -work work2 {\\icnas1.cc.ic.ac.uk\jk2815\Year_3\DSD\system_template_de0\ip\Task7.v}
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module Task7
-
-Top level modules:
-	Task7
+	altfp_convert0
 
 } {} {}} //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/altfp_add_sub0.v {1 {vlog -work work2 //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/altfp_add_sub0.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
@@ -154,5 +158,12 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 
 Top level modules:
 	FloatMult
+
+} {} {}} //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/floor.v {1 {vlog -work work2 //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/floor.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module floor
+
+Top level modules:
+	floor
 
 } {} {}}

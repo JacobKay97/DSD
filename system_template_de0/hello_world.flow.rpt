@@ -1,5 +1,5 @@
 Flow report for hello_world
-Fri Mar 09 21:39:38 2018
+Sun Mar 11 21:13:38 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -40,21 +40,21 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Flow Summary                                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Flow Status                        ; Successful - Fri Mar 09 21:39:22 2018            ;
+; Flow Status                        ; Successful - Sun Mar 11 21:13:38 2018            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; hello_world                                      ;
 ; Top-level Entity Name              ; hello_world                                      ;
 ; Family                             ; Cyclone III                                      ;
 ; Device                             ; EP3C16F484C6                                     ;
 ; Timing Models                      ; Final                                            ;
-; Total logic elements               ; 9,336 / 15,408 ( 61 % )                          ;
-;     Total combinational functions  ; 8,601 / 15,408 ( 56 % )                          ;
-;     Dedicated logic registers      ; 3,536 / 15,408 ( 23 % )                          ;
-; Total registers                    ; 3604                                             ;
+; Total logic elements               ; 4,956 / 15,408 ( 32 % )                          ;
+;     Total combinational functions  ; 4,574 / 15,408 ( 30 % )                          ;
+;     Dedicated logic registers      ; 2,754 / 15,408 ( 18 % )                          ;
+; Total registers                    ; 2822                                             ;
 ; Total pins                         ; 47 / 347 ( 14 % )                                ;
 ; Total virtual pins                 ; 0                                                ;
-; Total memory bits                  ; 152,169 / 516,096 ( 29 % )                       ;
-; Embedded Multiplier 9-bit elements ; 39 / 112 ( 35 % )                                ;
+; Total memory bits                  ; 152,146 / 516,096 ( 29 % )                       ;
+; Embedded Multiplier 9-bit elements ; 27 / 112 ( 24 % )                                ;
 ; Total PLLs                         ; 1 / 4 ( 25 % )                                   ;
 +------------------------------------+--------------------------------------------------+
 
@@ -64,28 +64,30 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/09/2018 21:36:37 ;
+; Start date & time ; 03/11/2018 21:11:13 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; hello_world         ;
 +-------------------+---------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                       ;
-+-------------------------------------+---------------------------------------+---------------+-------------+------------+
-; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id ;
-+-------------------------------------+---------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 176831338962927.152063139712800       ; --            ; --          ; --         ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --         ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --          ; --         ;
-; PARTITION_COLOR                     ; 16764057                              ; --            ; --          ; Top        ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; --          ; Top        ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; --          ; Top        ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                   ; --            ; --          ; --         ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --          ; --         ;
-; TIMEQUEST_DO_CCPP_REMOVAL           ; Off                                   ; On            ; --          ; --         ;
-; TIMEQUEST_DO_REPORT_TIMING          ; On                                    ; Off           ; --          ; --         ;
-+-------------------------------------+---------------------------------------+---------------+-------------+------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                           ;
++-------------------------------------+---------------------------------------+---------------+-------------+----------------+
+; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
++-------------------------------------+---------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 176831339027100.152080267311852       ; --            ; --          ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                           ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)             ; <None>        ; --          ; --             ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --          ; --             ;
+; PARTITION_COLOR                     ; 16764057                              ; --            ; --          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; --          ; Top            ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                   ; --            ; --          ; --             ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --          ; --             ;
+; TIMEQUEST_DO_CCPP_REMOVAL           ; Off                                   ; On            ; --          ; --             ;
+; TIMEQUEST_DO_REPORT_TIMING          ; On                                    ; Off           ; --          ; --             ;
++-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -93,11 +95,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:01:06     ; 1.0                     ; 751 MB              ; 00:00:54                           ;
-; Fitter                    ; 00:01:19     ; 2.3                     ; 1334 MB             ; 00:02:15                           ;
-; Assembler                 ; 00:00:04     ; 1.0                     ; 456 MB              ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:14     ; 1.0                     ; 647 MB              ; 00:00:09                           ;
-; Total                     ; 00:02:43     ; --                      ; --                  ; 00:03:20                           ;
+; Analysis & Synthesis      ; 00:01:01     ; 1.0                     ; 698 MB              ; 00:00:45                           ;
+; Fitter                    ; 00:00:29     ; 1.3                     ; 1173 MB             ; 00:00:31                           ;
+; Assembler                 ; 00:00:05     ; 1.0                     ; 447 MB              ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:10     ; 1.0                     ; 570 MB              ; 00:00:06                           ;
+; EDA Netlist Writer        ; 00:00:19     ; 1.0                     ; 483 MB              ; 00:00:08                           ;
+; Total                     ; 00:02:04     ; --                      ; --                  ; 00:01:32                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -106,10 +109,11 @@ applicable agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; eews506a-007     ; Windows 7 ; 6.1        ; x86_64         ;
-; Fitter                    ; eews506a-007     ; Windows 7 ; 6.1        ; x86_64         ;
-; Assembler                 ; eews506a-007     ; Windows 7 ; 6.1        ; x86_64         ;
-; TimeQuest Timing Analyzer ; eews506a-007     ; Windows 7 ; 6.1        ; x86_64         ;
+; Analysis & Synthesis      ; eews506a-048     ; Windows 7 ; 6.1        ; x86_64         ;
+; Fitter                    ; eews506a-048     ; Windows 7 ; 6.1        ; x86_64         ;
+; Assembler                 ; eews506a-048     ; Windows 7 ; 6.1        ; x86_64         ;
+; TimeQuest Timing Analyzer ; eews506a-048     ; Windows 7 ; 6.1        ; x86_64         ;
+; EDA Netlist Writer        ; eews506a-048     ; Windows 7 ; 6.1        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
@@ -120,6 +124,7 @@ quartus_map --read_settings_files=on --write_settings_files=off hello_world -c h
 quartus_fit --read_settings_files=off --write_settings_files=off hello_world -c hello_world
 quartus_asm --read_settings_files=off --write_settings_files=off hello_world -c hello_world
 quartus_sta hello_world -c hello_world
+quartus_eda --read_settings_files=off --write_settings_files=off hello_world -c hello_world
 
 
 

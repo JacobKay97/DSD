@@ -33,8 +33,8 @@ applicable agreement for further details.
 	(port
 		(pt 0 48)
 		(input)
-		(text "start" (rect 0 0 17 12)(font "Arial" ))
-		(text "start" (rect 21 43 38 55)(font "Arial" ))
+		(text "clken" (rect 0 0 20 12)(font "Arial" ))
+		(text "clken" (rect 21 43 41 55)(font "Arial" ))
 		(line (pt 0 48)(pt 16 48)(line_width 1))
 	)
 	(port

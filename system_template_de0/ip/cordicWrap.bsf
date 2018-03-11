@@ -44,28 +44,7 @@ applicable agreement for further details.
 		(text "out[23..0]" (rect 111 27 147 39)(font "Arial" ))
 		(line (pt 168 32)(pt 152 32)(line_width 3))
 	)
-	(parameter
-		"pi"
-		"0000000000000000000000000000001100100100001111110110101010001000"
-		""
-		(type "PARAMETER_UNSIGNED_BIN")	)
-	(parameter
-		"twopi"
-		"0000000000000000000000000000011001001000011111101101010100010001"
-		""
-		(type "PARAMETER_UNSIGNED_BIN")	)
-	(parameter
-		"pibytwo"
-		"0000000000000000000000000000000110010010000111111011010101000100"
-		""
-		(type "PARAMETER_UNSIGNED_BIN")	)
-	(parameter
-		"threepibytwo"
-		"0000000000000000000000000000010010110110010111110001111111001101"
-		""
-		(type "PARAMETER_UNSIGNED_BIN")	)
 	(drawing
 		(rectangle (rect 16 16 152 64)(line_width 1))
 	)
-	(annotation_block (parameter)(rect 184 -64 284 16))
 )

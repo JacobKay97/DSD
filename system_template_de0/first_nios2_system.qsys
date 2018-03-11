@@ -100,19 +100,19 @@
          type = "String";
       }
    }
-   element led_pio.s1
-   {
-      datum baseAddress
-      {
-         value = "16781344";
-         type = "String";
-      }
-   }
    element sdram.s1
    {
       datum baseAddress
       {
          value = "8388608";
+         type = "String";
+      }
+   }
+   element led_pio.s1
+   {
+      datum baseAddress
+      {
+         value = "16781344";
          type = "String";
       }
    }
@@ -155,7 +155,7 @@
  <parameter name="projectName" value="hello_world.qpf" />
  <parameter name="sopcBorderPoints" value="false" />
  <parameter name="systemHash" value="1" />
- <parameter name="timeStamp" value="1520609917062" />
+ <parameter name="timeStamp" value="1520782090310" />
  <parameter name="useTestBenchNamingPattern" value="false" />
  <instanceScript></instanceScript>
  <interface name="clk" internal="clk_0.clk_in" type="clock" dir="end" />
