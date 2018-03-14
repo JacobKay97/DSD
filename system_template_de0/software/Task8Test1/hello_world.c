@@ -31,14 +31,14 @@
 #define ALT_CI_FPTASK8_0_N 0x1
 
 // Test case 1
-//#define step 5
-//#define N 52
+#define step 5
+#define N 52
 // Test case 2
 //#define step 0.1
 //#define N 2551
 //Test case 3
-#define step 0.001
-#define N 255001
+//#define step 0.001
+//#define N 255001
 // Generates the vector x and stores it in the memory
 void generateVector(float x[N] )
 {
@@ -71,7 +71,7 @@ int main()
 
 	// Returned result
 	float y;
-//	generateVector(x);
+	generateVector(x);
 	// The following is used for timing
 	char buf[50];
 	clock_t exec_t1, exec_t2;
@@ -79,7 +79,7 @@ int main()
 	exec_t1 = times(NULL); // get system time before starting the process
 	// The code that you want to time goes here
 	int i;
-	for (i=0; i<10;i++){
+	for (i=0; i<10000;i++){
 		y = sumVector(x, N);
 	}
 	// till here

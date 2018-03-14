@@ -84,12 +84,26 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 Top level modules:
 	cordic_dsd_multistep_30bits
 
+} {} {}} //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/fixedtofloat.v {1 {vlog -work work //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/fixedtofloat.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module fixedtofloat
+
+Top level modules:
+	fixedtofloat
+
 } {} {}} //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/FloatAddSub.v {1 {vlog -work work2 //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/FloatAddSub.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling module FloatAddSub
 
 Top level modules:
 	FloatAddSub
+
+} {} {}} //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/CordicSkip.v {1 {vlog -work work //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/CordicSkip.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module CordicSkip
+
+Top level modules:
+	CordicSkip
 
 } {} {}} //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/task7Timer.v {1 {vlog -work work2 //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/task7Timer.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
@@ -130,6 +144,14 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 Top level modules:
 	altfp_convert0
 
+} {} {}} //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/altfp_mult0.v {1 {vlog -work work2 //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/altfp_mult0.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module altfp_mult0_altfp_mult_0fo
+-- Compiling module altfp_mult0
+
+Top level modules:
+	altfp_mult0
+
 } {} {}} //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/altfp_add_sub0.v {1 {vlog -work work2 //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/altfp_add_sub0.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling module altfp_add_sub0_altbarrel_shift_q3e
@@ -164,14 +186,6 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 
 Top level modules:
 	FloatMult
-
-} {} {}} //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/altfp_mult0.v {1 {vlog -work work2 //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/altfp_mult0.v
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module altfp_mult0_altfp_mult_0fo
--- Compiling module altfp_mult0
-
-Top level modules:
-	altfp_mult0
 
 } {} {}} //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/floor.v {1 {vlog -work work2 //icnas1.cc.ic.ac.uk/jk2815/Year_3/DSD/system_template_de0/ip/floor.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012

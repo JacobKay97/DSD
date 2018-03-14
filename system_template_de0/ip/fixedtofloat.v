@@ -12,14 +12,14 @@ module fixedtofloat
 	output reg [31:0] floatout;
 	reg [27:0] internal;
 	reg sign;
-	reg [2:0] GSR;
+	reg [2:0] GRS;
 	
 	
 	
 	always @ (posedge clk) 	begin
 	//	if(clken) begin
 			if(fixedin[27]) begin
-				internal = ~fixedin + 1;
+				internal = ~fixedin + 1'b1;
 				sign = 1'b1;
 			end
 			else begin
@@ -29,13 +29,42 @@ module fixedtofloat
 				
 			casez(internal)
 				28'b01??????????????????????????: begin
-					GSR = internal[2]
+					GRS = internal[2:0]; //Need to deal with overflow conditions????
+					if(GRS == 3'b100) begin //Tie
+						if (internal[3]) begin //If last bit is 1, it's odd so round up
+							internal = internal + 28'b01000; //Add to the last mantissa bit
+						end
+					end
+					else if(GRS == 3'b101 || GRS == 3'b110 || GRS == 3'b111) begin //Round up
+						internal = internal + 28'b01000;
+					end
+					
 					floatout <= {sign, 8'd127, internal[25:3] };
 				end
 				28'b001?????????????????????????: begin
+					GRS = {internal[1:0],1'b0}; //Need to deal with overflow conditions????
+					if(GRS == 3'b100) begin //Tie
+						if (internal[2]) begin //If last bit is 1, it's odd so round up
+							internal = internal + 28'b0100; //Add to the last mantissa bit
+						end
+					end
+					else if(GRS == 3'b101 || GRS == 3'b110 || GRS == 3'b111) begin //Round up
+						internal = internal + 28'b0100;
+					end
+				
 					floatout <= {sign, 8'd126, internal[24:2]};
 				end
 				28'b0001????????????????????????: begin
+					GRS = {internal[0], 2'b0}; //Need to deal with overflow conditions????
+					if(GRS == 3'b100) begin //Tie
+						if (internal[1]) begin //If last bit is 1, it's odd so round up
+							internal = internal + 28'b010; //Add to the last mantissa bit
+						end
+					end
+					else if(GRS == 3'b101 || GRS == 3'b110 || GRS == 3'b111) begin //Round up
+						internal = internal + 28'b010;
+					end
+				
 					floatout <= {sign, 8'd125, internal[23:1]};
 				end
 				28'b00001???????????????????????: begin

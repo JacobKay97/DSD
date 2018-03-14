@@ -1,12 +1,12 @@
-Fitter Status : Successful - Wed Mar 14 15:36:02 2018
+Fitter Status : Successful - Wed Mar 14 17:23:15 2018
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
 Revision Name : hello_world
 Top-level Entity Name : hello_world
 Family : Cyclone III
 Device : EP3C16F484C6
 Timing Models : Final
-Total logic elements : 7,378 / 15,408 ( 48 % )
-    Total combinational functions : 6,868 / 15,408 ( 45 % )
+Total logic elements : 7,517 / 15,408 ( 49 % )
+    Total combinational functions : 7,018 / 15,408 ( 46 % )
     Dedicated logic registers : 3,592 / 15,408 ( 23 % )
 Total registers : 3660
 Total pins : 48 / 347 ( 14 % )

@@ -19,6 +19,9 @@ Altera or its authorized distributors.  Please refer to the
 applicable agreement for further details.
 */
 (header "graphic" (version "1.4"))
+(properties
+	(page_setup "orientation\n1\npaper_size\n2\npaper_source\n12\nmargin\n1.000:1.000:1.000:1.000\n")
+)
 (pin
 	(input)
 	(rect -408 -56 -232 -40)
@@ -69,7 +72,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1800 -56 1976 -40)
+	(rect 1816 -56 1992 -40)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "dataout[31..0]" (rect 90 0 158 12)(font "Arial" ))
 	(pt 0 8)
@@ -383,42 +386,6 @@ applicable agreement for further details.
 	(annotation_block (parameter)(rect 496 288 696 320))
 )
 (symbol
-	(rect 856 144 1056 256)
-	(text "fixedtofloat" (rect 5 0 61 12)(font "Arial" ))
-	(text "inst9" (rect 8 96 31 108)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "clk" (rect 0 0 14 12)(font "Arial" ))
-		(text "clk" (rect 21 27 35 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "clken" (rect 0 0 25 12)(font "Arial" ))
-		(text "clken" (rect 21 43 46 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "fixedin[27..0]" (rect 0 0 64 12)(font "Arial" ))
-		(text "fixedin[27..0]" (rect 21 59 85 71)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64)(line_width 3))
-	)
-	(port
-		(pt 200 32)
-		(output)
-		(text "floatout[31..0]" (rect 0 0 69 12)(font "Arial" ))
-		(text "floatout[31..0]" (rect 121 27 190 39)(font "Arial" ))
-		(line (pt 200 32)(pt 184 32)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 184 96))
-	)
-)
-(symbol
 	(rect -160 -104 0 40)
 	(text "task8Timer" (rect 5 0 59 12)(font "Arial" ))
 	(text "inst10" (rect 8 128 37 140)(font "Arial" ))
@@ -473,6 +440,42 @@ applicable agreement for further details.
 	)
 	(drawing
 		(rectangle (rect 16 16 144 128))
+	)
+)
+(symbol
+	(rect 856 144 1056 256)
+	(text "fixedtofloat" (rect 5 0 61 12)(font "Arial" ))
+	(text "inst9" (rect 8 96 31 108)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 21 27 35 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "clken" (rect 0 0 25 12)(font "Arial" ))
+		(text "clken" (rect 21 43 46 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "fixedin[27..0]" (rect 0 0 64 12)(font "Arial" ))
+		(text "fixedin[27..0]" (rect 21 59 85 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 200 32)
+		(output)
+		(text "floatout[31..0]" (rect 0 0 69 12)(font "Arial" ))
+		(text "floatout[31..0]" (rect 121 27 190 39)(font "Arial" ))
+		(line (pt 200 32)(pt 184 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 184 96))
 	)
 )
 (connector
@@ -646,16 +649,6 @@ applicable agreement for further details.
 	(pt 80 88)
 )
 (connector
-	(pt 1600 -64)
-	(pt 1600 -48)
-	(bus)
-)
-(connector
-	(pt 1600 -48)
-	(pt 1800 -48)
-	(bus)
-)
-(connector
 	(pt 80 88)
 	(pt 104 88)
 )
@@ -806,6 +799,16 @@ applicable agreement for further details.
 (connector
 	(pt 816 192)
 	(pt 856 192)
+)
+(connector
+	(pt 1600 -64)
+	(pt 1600 -48)
+	(bus)
+)
+(connector
+	(pt 1600 -48)
+	(pt 1816 -48)
+	(bus)
 )
 (junction (pt 56 72))
 (junction (pt 56 56))

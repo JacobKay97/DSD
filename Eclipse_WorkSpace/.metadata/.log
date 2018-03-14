@@ -8604,3 +8604,470 @@ java.lang.Exception
 
 !ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 15:40:26.654
 !MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1001030 --id=0x0 --timestamp=1521041652 /cygdrive/h/Year_3/DSD/system_template_de0/software/Task8Test1/Task8Test1.elf]
+!SESSION 2018-03-14 16:15:05.459 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 16:18:05.735
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1001030 --id=0x0 --timestamp=1521043861]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 16:18:08.704
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1001030 --id=0x0 --timestamp=1521043861 /cygdrive/h/Year_3/DSD/system_template_de0/software/Task8Test1/Task8Test1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 16:19:46.851
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 16:19:49.234
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1001030 --id=0x0 --timestamp=1521043861]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 16:19:52.179
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1001030 --id=0x0 --timestamp=1521043861 /cygdrive/h/Year_3/DSD/system_template_de0/software/Task8Test1/Task8Test1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 16:20:53.663
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 16:20:54.807
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1001030 --id=0x0 --timestamp=1521043861]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 16:20:57.753
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1001030 --id=0x0 --timestamp=1521043861 /cygdrive/h/Year_3/DSD/system_template_de0/software/Task8Test1/Task8Test1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 16:22:04.831
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 16:22:05.908
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1001030 --id=0x0 --timestamp=1521043861]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 16:22:08.911
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1001030 --id=0x0 --timestamp=1521043861 /cygdrive/h/Year_3/DSD/system_template_de0/software/Task8Test1/Task8Test1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 16:23:40.741
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 16:23:41.822
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1001030 --id=0x0 --timestamp=1521043861]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 16:23:44.807
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1001030 --id=0x0 --timestamp=1521043861 /cygdrive/h/Year_3/DSD/system_template_de0/software/Task8Test1/Task8Test1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 16:24:12.089
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 16:24:13.125
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1001030 --id=0x0 --timestamp=1521043861]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 16:24:16.108
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1001030 --id=0x0 --timestamp=1521043861 /cygdrive/h/Year_3/DSD/system_template_de0/software/Task8Test1/Task8Test1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 16:24:45.629
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 16:24:46.749
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1001030 --id=0x0 --timestamp=1521043861]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 16:24:49.644
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1001030 --id=0x0 --timestamp=1521043861 /cygdrive/h/Year_3/DSD/system_template_de0/software/Task8Test1/Task8Test1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 16:32:48.353
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-03-14 16:32:54.388
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception: System timestamp mismatch - connected: "1521044806", expected: "1521043861".
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.assertTrue(SystemConsoleConnectionModel.java:645)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateSystemId(SystemConsoleConnectionModel.java:631)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:511)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:937)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-03-14 16:32:54.397
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception: System timestamp mismatch - connected: "1521044806", expected: "1521043861".
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.assertTrue(SystemConsoleConnectionModel.java:645)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateSystemId(SystemConsoleConnectionModel.java:631)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:511)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:937)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 16:33:10.633
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1001030 --id=0x0 --timestamp=1521044806]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 16:33:13.567
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1001030 --id=0x0 --timestamp=1521044806 /cygdrive/h/Year_3/DSD/system_template_de0/software/Task8Test1/Task8Test1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 16:38:43.870
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 16:38:45.178
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1001030 --id=0x0 --timestamp=1521045231]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 16:38:48.068
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1001030 --id=0x0 --timestamp=1521045231 /cygdrive/h/Year_3/DSD/system_template_de0/software/Task8Test1/Task8Test1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 16:39:32.454
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 16:39:33.684
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1001030 --id=0x0 --timestamp=1521045231]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 16:39:36.690
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1001030 --id=0x0 --timestamp=1521045231 /cygdrive/h/Year_3/DSD/system_template_de0/software/Task8Test1/Task8Test1.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-03-14 16:39:42.270
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --sidp=0x1001030, --id=0x0, --timestamp=1521045231, /cygdrive/h/Year_3/DSD/system_template_de0/software/Task8Test1/Task8Test1.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-03-14 16:39:42.273
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-03-14 16:46:05.149
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception: System timestamp mismatch - connected: "1521045651", expected: "1521045231".
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.assertTrue(SystemConsoleConnectionModel.java:645)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateSystemId(SystemConsoleConnectionModel.java:631)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:511)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:937)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-03-14 16:46:05.157
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception: System timestamp mismatch - connected: "1521045651", expected: "1521045231".
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.assertTrue(SystemConsoleConnectionModel.java:645)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateSystemId(SystemConsoleConnectionModel.java:631)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:511)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:937)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 16:46:50.516
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1001030 --id=0x0 --timestamp=1521045651]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 16:46:53.396
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1001030 --id=0x0 --timestamp=1521045651 /cygdrive/h/Year_3/DSD/system_template_de0/software/Task8Test1/Task8Test1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 17:27:16.190
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 17:27:17.313
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1001030 --id=0x0 --timestamp=1521048089]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 17:27:20.230
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1001030 --id=0x0 --timestamp=1521048089 /cygdrive/h/Year_3/DSD/system_template_de0/software/Task8Test1/Task8Test1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 17:28:28.328
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 17:28:29.381
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1001030 --id=0x0 --timestamp=1521048089]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 17:28:32.290
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1001030 --id=0x0 --timestamp=1521048089 /cygdrive/h/Year_3/DSD/system_template_de0/software/Task8Test1/Task8Test1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 17:29:28.620
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 17:29:29.652
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1001030 --id=0x0 --timestamp=1521048089]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 17:29:32.567
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1001030 --id=0x0 --timestamp=1521048089 /cygdrive/h/Year_3/DSD/system_template_de0/software/Task8Test1/Task8Test1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 17:30:59.793
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 17:31:00.921
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1001030 --id=0x0 --timestamp=1521048089]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 17:31:03.879
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1001030 --id=0x0 --timestamp=1521048089 /cygdrive/h/Year_3/DSD/system_template_de0/software/Task8Test1/Task8Test1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 18:38:19.932
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+!SESSION 2018-03-14 18:40:04.399 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-03-14 18:40:05.605
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 18:40:18.256
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1001030 --id=0x0 --timestamp=1521048089]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-03-14 18:40:21.030
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --stop, --sidp=0x1001030, --id=0x0, --timestamp=1521048089] return code: 139
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 18:40:21.273
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1001030 --id=0x0 --timestamp=1521048089 /cygdrive/h/Year_3/DSD/system_template_de0/software/Task8Test1/Task8Test1.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-03-14 18:40:24.340
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --sidp=0x1001030, --id=0x0, --timestamp=1521048089, /cygdrive/h/Year_3/DSD/system_template_de0/software/Task8Test1/Task8Test1.elf] return code: 139
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-03-14 18:40:24.352
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 18:41:33.791
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1001030 --id=0x0 --timestamp=1521048089]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-03-14 18:41:36.373
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --stop, --sidp=0x1001030, --id=0x0, --timestamp=1521048089] return code: 139
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 18:41:36.618
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1001030 --id=0x0 --timestamp=1521048089 /cygdrive/h/Year_3/DSD/system_template_de0/software/Task8Test1/Task8Test1.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-03-14 18:41:39.701
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --sidp=0x1001030, --id=0x0, --timestamp=1521048089, /cygdrive/h/Year_3/DSD/system_template_de0/software/Task8Test1/Task8Test1.elf] return code: 139
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-03-14 18:41:39.707
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 18:42:28.225
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1001030 --id=0x0 --timestamp=1521048089]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-03-14 18:42:30.777
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --stop, --sidp=0x1001030, --id=0x0, --timestamp=1521048089] return code: 139
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 18:42:31.009
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1001030 --id=0x0 --timestamp=1521048089 /cygdrive/h/Year_3/DSD/system_template_de0/software/Task8Test1/Task8Test1.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-03-14 18:42:34.088
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --sidp=0x1001030, --id=0x0, --timestamp=1521048089, /cygdrive/h/Year_3/DSD/system_template_de0/software/Task8Test1/Task8Test1.elf] return code: 139
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-03-14 18:42:34.094
+!MESSAGE Downloading ELF Process failed
+!SESSION 2018-03-14 19:12:49.012 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-03-14 19:14:11.115
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception: Connected system ID hash not found on target at expected base address.
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.assertTrue(SystemConsoleConnectionModel.java:645)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateSystemId(SystemConsoleConnectionModel.java:589)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:511)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:937)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-03-14 19:14:11.138
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception: Connected system ID hash not found on target at expected base address.
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.assertTrue(SystemConsoleConnectionModel.java:645)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateSystemId(SystemConsoleConnectionModel.java:589)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:511)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:937)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 19:16:14.250
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1001030 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 19:16:17.059
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1001030 --id=0x0 /cygdrive/h/Year_3/DSD/system_template_de0/software/Task8Test1/Task8Test1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 19:19:58.994
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 19:20:00.361
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1001030 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 19:20:03.152
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1001030 --id=0x0 /cygdrive/h/Year_3/DSD/system_template_de0/software/Task8Test1/Task8Test1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 19:20:26.647
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 19:20:27.866
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1001030 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 19:20:30.655
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1001030 --id=0x0 /cygdrive/h/Year_3/DSD/system_template_de0/software/Task8Test1/Task8Test1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 19:21:23.720
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 19:21:24.838
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1001030 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 19:21:27.584
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1001030 --id=0x0 /cygdrive/h/Year_3/DSD/system_template_de0/software/Task8Test1/Task8Test1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 19:22:03.067
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 19:22:04.518
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1001030 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 19:22:07.285
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1001030 --id=0x0 /cygdrive/h/Year_3/DSD/system_template_de0/software/Task8Test1/Task8Test1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 19:23:24.094
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-03-14 19:23:31.588
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception: Connected system ID hash not found on target at expected base address.
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.assertTrue(SystemConsoleConnectionModel.java:645)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateSystemId(SystemConsoleConnectionModel.java:589)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:511)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:937)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-03-14 19:23:31.593
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception: Connected system ID hash not found on target at expected base address.
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.assertTrue(SystemConsoleConnectionModel.java:645)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateSystemId(SystemConsoleConnectionModel.java:589)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:511)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:937)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 19:27:15.077
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1001030 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 19:27:17.760
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1001030 --id=0x0 /cygdrive/h/Year_3/DSD/system_template_de0/software/Task8Test1/Task8Test1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 19:28:43.245
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 19:28:44.391
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1001030 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 19:28:47.372
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1001030 --id=0x0 /cygdrive/h/Year_3/DSD/system_template_de0/software/Task8Test1/Task8Test1.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-03-14 19:28:51.116
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --sidp=0x1001030, --id=0x0, /cygdrive/h/Year_3/DSD/system_template_de0/software/Task8Test1/Task8Test1.elf] return code: 134
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-03-14 19:28:51.119
+!MESSAGE Downloading ELF Process failed
+!SESSION 2018-03-14 19:29:02.984 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 19:29:24.123
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1001030 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-03-14 19:29:27.305
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --stop, --sidp=0x1001030, --id=0x0] return code: 139
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 19:29:27.543
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1001030 --id=0x0 /cygdrive/h/Year_3/DSD/system_template_de0/software/Task8Test1/Task8Test1.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-03-14 19:29:30.595
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --sidp=0x1001030, --id=0x0, /cygdrive/h/Year_3/DSD/system_template_de0/software/Task8Test1/Task8Test1.elf] return code: 139
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-03-14 19:29:30.606
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 19:30:29.520
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1001030 --id=0x0 --timestamp=1521048089]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-03-14 19:30:32.136
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --stop, --sidp=0x1001030, --id=0x0, --timestamp=1521048089] return code: 139
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 19:30:32.364
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1001030 --id=0x0 --timestamp=1521048089 /cygdrive/h/Year_3/DSD/system_template_de0/software/Task8Test1/Task8Test1.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-03-14 19:30:35.593
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --sidp=0x1001030, --id=0x0, --timestamp=1521048089, /cygdrive/h/Year_3/DSD/system_template_de0/software/Task8Test1/Task8Test1.elf] return code: 139
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-03-14 19:30:35.598
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 19:30:46.316
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1001030 --id=0x0 --timestamp=1521048089]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-03-14 19:30:48.876
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --stop, --sidp=0x1001030, --id=0x0, --timestamp=1521048089] return code: 139
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 19:30:49.113
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1001030 --id=0x0 --timestamp=1521048089 /cygdrive/h/Year_3/DSD/system_template_de0/software/Task8Test1/Task8Test1.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-03-14 19:30:52.220
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --sidp=0x1001030, --id=0x0, --timestamp=1521048089, /cygdrive/h/Year_3/DSD/system_template_de0/software/Task8Test1/Task8Test1.elf] return code: 139
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-03-14 19:30:52.226
+!MESSAGE Downloading ELF Process failed
+!SESSION 2018-03-14 19:34:28.027 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 19:38:28.614
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1001030 --id=0x0 --timestamp=1521048089]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 19:38:31.624
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1001030 --id=0x0 --timestamp=1521048089 /cygdrive/h/Year_3/DSD/system_template_de0/software/Task8Test1/Task8Test1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 19:40:09.121
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 19:40:10.433
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1001030 --id=0x0 --timestamp=1521048089]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-03-14 19:40:13.623
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1001030 --id=0x0 --timestamp=1521048089 /cygdrive/h/Year_3/DSD/system_template_de0/software/Task8Test1/Task8Test1.elf]
