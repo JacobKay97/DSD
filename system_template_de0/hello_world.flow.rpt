@@ -1,5 +1,5 @@
 Flow report for hello_world
-Sun Mar 11 21:13:38 2018
+Wed Mar 14 15:37:03 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -40,21 +40,21 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Flow Summary                                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Flow Status                        ; Successful - Sun Mar 11 21:13:38 2018            ;
+; Flow Status                        ; Successful - Wed Mar 14 15:37:03 2018            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; hello_world                                      ;
 ; Top-level Entity Name              ; hello_world                                      ;
 ; Family                             ; Cyclone III                                      ;
 ; Device                             ; EP3C16F484C6                                     ;
 ; Timing Models                      ; Final                                            ;
-; Total logic elements               ; 4,956 / 15,408 ( 32 % )                          ;
-;     Total combinational functions  ; 4,574 / 15,408 ( 30 % )                          ;
-;     Dedicated logic registers      ; 2,754 / 15,408 ( 18 % )                          ;
-; Total registers                    ; 2822                                             ;
-; Total pins                         ; 47 / 347 ( 14 % )                                ;
+; Total logic elements               ; 7,378 / 15,408 ( 48 % )                          ;
+;     Total combinational functions  ; 6,868 / 15,408 ( 45 % )                          ;
+;     Dedicated logic registers      ; 3,592 / 15,408 ( 23 % )                          ;
+; Total registers                    ; 3660                                             ;
+; Total pins                         ; 48 / 347 ( 14 % )                                ;
 ; Total virtual pins                 ; 0                                                ;
-; Total memory bits                  ; 152,146 / 516,096 ( 29 % )                       ;
-; Embedded Multiplier 9-bit elements ; 27 / 112 ( 24 % )                                ;
+; Total memory bits                  ; 81,992 / 516,096 ( 16 % )                        ;
+; Embedded Multiplier 9-bit elements ; 34 / 112 ( 30 % )                                ;
 ; Total PLLs                         ; 1 / 4 ( 25 % )                                   ;
 +------------------------------------+--------------------------------------------------+
 
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/11/2018 21:11:13 ;
+; Start date & time ; 03/14/2018 15:34:07 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; hello_world         ;
 +-------------------+---------------------+
@@ -75,11 +75,16 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 176831339027100.152080267311852       ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 176831338052861.152104164703620       ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                           ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)             ; <None>        ; --          ; --             ;
+; IP_TOOL_NAME                        ; ALTFP_ADD_SUB                         ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                  ; --            ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --          ; --             ;
+; MISC_FILE                           ; ip/altfp_add_sub1.bsf                 ; --            ; --          ; --             ;
+; MISC_FILE                           ; ip/altfp_add_sub1_inst.v              ; --            ; --          ; --             ;
+; MISC_FILE                           ; ip/altfp_add_sub1_bb.v                ; --            ; --          ; --             ;
 ; PARTITION_COLOR                     ; 16764057                              ; --            ; --          ; Top            ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; --          ; Top            ;
 ; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; --          ; Top            ;
@@ -95,12 +100,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:01:01     ; 1.0                     ; 698 MB              ; 00:00:45                           ;
-; Fitter                    ; 00:00:29     ; 1.3                     ; 1173 MB             ; 00:00:31                           ;
-; Assembler                 ; 00:00:05     ; 1.0                     ; 447 MB              ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:10     ; 1.0                     ; 570 MB              ; 00:00:06                           ;
-; EDA Netlist Writer        ; 00:00:19     ; 1.0                     ; 483 MB              ; 00:00:08                           ;
-; Total                     ; 00:02:04     ; --                      ; --                  ; 00:01:32                           ;
+; Analysis & Synthesis      ; 00:01:05     ; 1.0                     ; 702 MB              ; 00:00:52                           ;
+; Fitter                    ; 00:00:41     ; 1.6                     ; 1291 MB             ; 00:00:44                           ;
+; Assembler                 ; 00:00:05     ; 1.0                     ; 458 MB              ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:11     ; 1.0                     ; 606 MB              ; 00:00:08                           ;
+; EDA Netlist Writer        ; 00:00:30     ; 1.0                     ; 505 MB              ; 00:00:11                           ;
+; Total                     ; 00:02:32     ; --                      ; --                  ; 00:01:57                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -109,11 +114,11 @@ applicable agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; eews506a-048     ; Windows 7 ; 6.1        ; x86_64         ;
-; Fitter                    ; eews506a-048     ; Windows 7 ; 6.1        ; x86_64         ;
-; Assembler                 ; eews506a-048     ; Windows 7 ; 6.1        ; x86_64         ;
-; TimeQuest Timing Analyzer ; eews506a-048     ; Windows 7 ; 6.1        ; x86_64         ;
-; EDA Netlist Writer        ; eews506a-048     ; Windows 7 ; 6.1        ; x86_64         ;
+; Analysis & Synthesis      ; eews506a-012     ; Windows 7 ; 6.1        ; x86_64         ;
+; Fitter                    ; eews506a-012     ; Windows 7 ; 6.1        ; x86_64         ;
+; Assembler                 ; eews506a-012     ; Windows 7 ; 6.1        ; x86_64         ;
+; TimeQuest Timing Analyzer ; eews506a-012     ; Windows 7 ; 6.1        ; x86_64         ;
+; EDA Netlist Writer        ; eews506a-012     ; Windows 7 ; 6.1        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 

@@ -1,9 +1,7 @@
-module cordic_dsd #(parameter DATA_WIDTH = 24)
+module cordic_dsd #(parameter DATA_WIDTH = 28)
 (
 	input	clk, rst, en,
 	input signed [DATA_WIDTH-1:0] z,
-	input negate,
-	output done,
 	output signed [DATA_WIDTH-1:0] sin_out
 );
 	
@@ -18,30 +16,34 @@ module cordic_dsd #(parameter DATA_WIDTH = 24)
 	
 	wire signed [DATA_WIDTH-1:0] tan_values [0:DATA_WIDTH-1];
 	
-	assign tan_values[0] = 24'h3243F7;
-	assign tan_values[1] = 24'h1DAC67;
-	assign tan_values[2] = 24'h0FADBB;
-	assign tan_values[3] = 24'h07F56F;
-	assign tan_values[4] = 24'h03FEAB;
-	assign tan_values[5] = 24'h01FFD5;
-	assign tan_values[6] = 24'h00FFFB;
-	assign tan_values[7] = 24'h007FFF;
-	assign tan_values[8] = 24'h004000;
-	assign tan_values[9] = 24'h002000;
-	assign tan_values[10] = 24'h001000;
-	assign tan_values[11] = 24'h000800;
-	assign tan_values[12] = 24'h000400;
-	assign tan_values[13] = 24'h000200;
-	assign tan_values[14] = 24'h000100;
-	assign tan_values[15] = 24'h000080;
-	assign tan_values[16] = 24'h000040;
-	assign tan_values[17] = 24'h000020;
-	assign tan_values[18] = 24'h000010;
-	assign tan_values[19] = 24'h000008;
-	assign tan_values[20] = 24'h000004;
-	assign tan_values[21] = 24'h000002;
-	assign tan_values[22] = 24'h000001;
-	assign tan_values[23] = 24'h000001;
+	assign tan_values[0] = 28'h3243F6B;
+	assign tan_values[1] = 28'h1DAC670;
+	assign tan_values[2] = 28'h0FADBB0;
+	assign tan_values[3] = 28'h07F56EA;
+	assign tan_values[4] = 28'h03FEAB7;
+	assign tan_values[5] = 28'h01FFD56;
+	assign tan_values[6] = 28'h00FFFAB;
+	assign tan_values[7] = 28'h007FFF5;
+	assign tan_values[8] = 28'h003FFFF;
+	assign tan_values[9] = 28'h0020000;
+	assign tan_values[10] = 28'h0010000;
+	assign tan_values[11] = 28'h0008000;
+	assign tan_values[12] = 28'h0004000;
+	assign tan_values[13] = 28'h0002000;
+	assign tan_values[14] = 28'h0001000;
+	assign tan_values[15] = 28'h0000800;
+	assign tan_values[16] = 28'h0000400;
+	assign tan_values[17] = 28'h0000200;
+	assign tan_values[18] = 28'h0000100;
+	assign tan_values[19] = 28'h0000080;
+	assign tan_values[20] = 28'h0000040;
+	assign tan_values[21] = 28'h0000020;
+	assign tan_values[22] = 28'h0000010;
+	assign tan_values[23] = 28'h0000008;
+	assign tan_values[24] = 28'h0000004;
+	assign tan_values[25] = 28'h0000002;
+	assign tan_values[26] = 28'h0000001;
+	assign tan_values[27] = 28'h0000001;
 	
 
 	
@@ -110,7 +112,7 @@ module cordic_dsd #(parameter DATA_WIDTH = 24)
 		case (state)
 			idle:
 			begin
-				x_next = 24'h26DD3B;
+				x_next = 28'h26DD3B7;
 				y_next = 0;
 				z_next = z;
 			end
@@ -131,9 +133,6 @@ module cordic_dsd #(parameter DATA_WIDTH = 24)
 			end
 		endcase
 	end
-
-	 
-	assign done = done_redge;
 
 	assign done_redge = done_int & (~done_dly);   
 	assign sin_out = done_redge? y_reg: 0;

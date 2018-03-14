@@ -33,7 +33,7 @@
 //applicable agreement for further details.
 
 
-//altfp_add_sub CBX_AUTO_BLACKBOX="ALL" DENORMAL_SUPPORT="NO" DEVICE_FAMILY="Cyclone III" DIRECTION="VARIABLE" OPTIMIZE="AREA" PIPELINE=7 REDUCED_FUNCTIONALITY="NO" WIDTH_EXP=8 WIDTH_MAN=23 add_sub clk_en clock dataa datab result
+//altfp_add_sub CBX_AUTO_BLACKBOX="ALL" DENORMAL_SUPPORT="NO" DEVICE_FAMILY="Cyclone III" DIRECTION="ADD" OPTIMIZE="AREA" PIPELINE=7 REDUCED_FUNCTIONALITY="NO" WIDTH_EXP=8 WIDTH_MAN=23 clk_en clock dataa datab result
 //VERSION_BEGIN 13.0 cbx_altbarrel_shift 2013:06:12:18:03:43:SJ cbx_altfp_add_sub 2013:06:12:18:03:43:SJ cbx_altpriority_encoder 2013:06:12:18:03:43:SJ cbx_cycloneii 2013:06:12:18:03:43:SJ cbx_lpm_add_sub 2013:06:12:18:03:43:SJ cbx_lpm_compare 2013:06:12:18:03:43:SJ cbx_mgl 2013:06:12:18:05:10:SJ cbx_stratix 2013:06:12:18:03:43:SJ cbx_stratixii 2013:06:12:18:03:43:SJ  VERSION_END
 // synthesis VERILOG_INPUT_VERSION VERILOG_2001
 // altera message_off 10463
@@ -702,19 +702,17 @@ module  altfp_add_sub0_altpriority_encoder_e48
 		q = {wire_altpriority_encoder24_zero, (({4{wire_altpriority_encoder24_zero}} & wire_altpriority_encoder25_q) | ({4{(~ wire_altpriority_encoder24_zero)}} & wire_altpriority_encoder24_q))};
 endmodule //altfp_add_sub0_altpriority_encoder_e48
 
-//synthesis_resources = lpm_add_sub 9 lpm_compare 1 reg 283 
+//synthesis_resources = lpm_add_sub 9 lpm_compare 1 reg 282 
 //synopsys translate_off
 `timescale 1 ps / 1 ps
 //synopsys translate_on
-module  altfp_add_sub0_altfp_add_sub_vsk
+module  altfp_add_sub0_altfp_add_sub_gkj
 	( 
-	add_sub,
 	clk_en,
 	clock,
 	dataa,
 	datab,
 	result) ;
-	input   add_sub;
 	input   clk_en;
 	input   clock;
 	input   [31:0]  dataa;
@@ -723,7 +721,6 @@ module  altfp_add_sub0_altfp_add_sub_vsk
 `ifndef ALTERA_RESERVED_QIS
 // synopsys translate_off
 `endif
-	tri1   add_sub;
 	tri1   clk_en;
 `ifndef ALTERA_RESERVED_QIS
 // synopsys translate_on
@@ -733,7 +730,6 @@ module  altfp_add_sub0_altfp_add_sub_vsk
 	wire  [25:0]   wire_rbarrel_shift_result;
 	wire  [4:0]   wire_leading_zeroes_cnt_q;
 	wire  [4:0]   wire_trailing_zeros_cnt_q;
-	reg	add_sub_dffe1;
 	reg	both_inputs_are_infinite_dffe1;
 	reg	[7:0]	data_exp_dffe1;
 	reg	[25:0]	dataa_man_dffe1;
@@ -809,18 +805,6 @@ module  altfp_add_sub0_altfp_add_sub_vsk
 	wire  [8:0]   wire_add_sub9_result;
 	wire  wire_trailing_zeros_limit_comparator_agb;
 	wire aclr;
-	wire  add_sub_dffe11_wi;
-	wire  add_sub_dffe11_wo;
-	wire  add_sub_dffe12_wi;
-	wire  add_sub_dffe12_wo;
-	wire  add_sub_dffe13_wi;
-	wire  add_sub_dffe13_wo;
-	wire  add_sub_dffe14_wi;
-	wire  add_sub_dffe14_wo;
-	wire  add_sub_dffe15_wi;
-	wire  add_sub_dffe15_wo;
-	wire  add_sub_dffe1_wi;
-	wire  add_sub_dffe1_wo;
 	wire  add_sub_dffe25_wi;
 	wire  add_sub_dffe25_wo;
 	wire  add_sub_w2;
@@ -1341,13 +1325,6 @@ module  altfp_add_sub0_altfp_add_sub_vsk
 	( 
 	.data({{9{1'b1}}, man_smaller_dffe13_wo[22:0]}),
 	.q(wire_trailing_zeros_cnt_q));
-	// synopsys translate_off
-	initial
-		add_sub_dffe1 = 0;
-	// synopsys translate_on
-	always @ ( posedge clock or  posedge aclr)
-		if (aclr == 1'b1) add_sub_dffe1 <= 1'b0;
-		else if  (clk_en == 1'b1)   add_sub_dffe1 <= add_sub_dffe1_wi;
 	// synopsys translate_off
 	initial
 		both_inputs_are_infinite_dffe1 = 0;
@@ -2036,21 +2013,9 @@ module  altfp_add_sub0_altfp_add_sub_vsk
 		trailing_zeros_limit_comparator.lpm_type = "lpm_compare";
 	assign
 		aclr = 1'b0,
-		add_sub_dffe11_wi = add_sub,
-		add_sub_dffe11_wo = add_sub_dffe11_wi,
-		add_sub_dffe12_wi = add_sub_dffe11_wo,
-		add_sub_dffe12_wo = add_sub_dffe12_wi,
-		add_sub_dffe13_wi = add_sub_dffe12_wo,
-		add_sub_dffe13_wo = add_sub_dffe13_wi,
-		add_sub_dffe14_wi = add_sub_dffe13_wo,
-		add_sub_dffe14_wo = add_sub_dffe14_wi,
-		add_sub_dffe15_wi = add_sub_dffe14_wo,
-		add_sub_dffe15_wo = add_sub_dffe15_wi,
-		add_sub_dffe1_wi = add_sub_dffe15_wo,
-		add_sub_dffe1_wo = add_sub_dffe1,
 		add_sub_dffe25_wi = add_sub_w2,
 		add_sub_dffe25_wo = add_sub_dffe25_wi,
-		add_sub_w2 = (((((dataa_sign_dffe1_wo & (~ datab_sign_dffe1_wo)) & (~ add_sub_dffe1_wo)) | (((~ dataa_sign_dffe1_wo) & (~ datab_sign_dffe1_wo)) & add_sub_dffe1_wo)) | (((~ dataa_sign_dffe1_wo) & datab_sign_dffe1_wo) & (~ add_sub_dffe1_wo))) | ((dataa_sign_dffe1_wo & datab_sign_dffe1_wo) & add_sub_dffe1_wo)),
+		add_sub_w2 = (~ (dataa_sign_dffe1_wo ^ datab_sign_dffe1_wo)),
 		aligned_dataa_exp_dffe12_wi = aligned_dataa_exp_w,
 		aligned_dataa_exp_dffe12_wo = aligned_dataa_exp_dffe12_wi,
 		aligned_dataa_exp_dffe13_wi = aligned_dataa_exp_dffe12_wo,
@@ -2217,7 +2182,7 @@ module  altfp_add_sub0_altfp_add_sub_vsk
 		force_nan_w = (infinity_magnitude_sub_dffe4_wo | input_is_nan_dffe4_wo),
 		force_zero_w = (~ man_res_is_not_zero_dffe4_wo),
 		guard_bit_dffe3_wo = man_res_w3[0],
-		infinite_output_sign_dffe1_wi = (((~ input_datab_infinite_dffe15_wo) & aligned_dataa_sign_dffe15_wo) | (input_datab_infinite_dffe15_wo & (~ (aligned_datab_sign_dffe15_wo ^ add_sub_dffe15_wo)))),
+		infinite_output_sign_dffe1_wi = (((~ input_datab_infinite_dffe15_wo) & aligned_dataa_sign_dffe15_wo) | (input_datab_infinite_dffe15_wo & aligned_datab_sign_dffe15_wo)),
 		infinite_output_sign_dffe1_wo = infinite_output_sign_dffe1,
 		infinite_output_sign_dffe21_wi = infinite_output_sign_dffe27_wo,
 		infinite_output_sign_dffe21_wo = infinite_output_sign_dffe21,
@@ -2547,7 +2512,7 @@ module  altfp_add_sub0_altfp_add_sub_vsk
 		zero_man_sign_dffe27_wo = zero_man_sign_dffe27_wi,
 		zero_man_sign_dffe2_wi = (dataa_sign_dffe25_wo & add_sub_dffe25_wo),
 		zero_man_sign_dffe2_wo = zero_man_sign_dffe2;
-endmodule //altfp_add_sub0_altfp_add_sub_vsk
+endmodule //altfp_add_sub0_altfp_add_sub_gkj
 //VALID FILE
 
 
@@ -2555,14 +2520,12 @@ endmodule //altfp_add_sub0_altfp_add_sub_vsk
 `timescale 1 ps / 1 ps
 // synopsys translate_on
 module altfp_add_sub0 (
-	add_sub,
 	clk_en,
 	clock,
 	dataa,
 	datab,
 	result);
 
-	input	  add_sub;
 	input	  clk_en;
 	input	  clock;
 	input	[31:0]  dataa;
@@ -2572,8 +2535,7 @@ module altfp_add_sub0 (
 	wire [31:0] sub_wire0;
 	wire [31:0] result = sub_wire0[31:0];
 
-	altfp_add_sub0_altfp_add_sub_vsk	altfp_add_sub0_altfp_add_sub_vsk_component (
-				.add_sub (add_sub),
+	altfp_add_sub0_altfp_add_sub_gkj	altfp_add_sub0_altfp_add_sub_gkj_component (
 				.clk_en (clk_en),
 				.clock (clock),
 				.datab (datab),
@@ -2591,20 +2553,18 @@ endmodule
 // Retrieval info: PRIVATE: WIDTH_DATA NUMERIC "32"
 // Retrieval info: LIBRARY: altera_mf altera_mf.altera_mf_components.all
 // Retrieval info: CONSTANT: DENORMAL_SUPPORT STRING "NO"
-// Retrieval info: CONSTANT: DIRECTION STRING "VARIABLE"
+// Retrieval info: CONSTANT: DIRECTION STRING "ADD"
 // Retrieval info: CONSTANT: INTENDED_DEVICE_FAMILY STRING "Cyclone III"
 // Retrieval info: CONSTANT: OPTIMIZE STRING "AREA"
 // Retrieval info: CONSTANT: PIPELINE NUMERIC "7"
 // Retrieval info: CONSTANT: REDUCED_FUNCTIONALITY STRING "NO"
 // Retrieval info: CONSTANT: WIDTH_EXP NUMERIC "8"
 // Retrieval info: CONSTANT: WIDTH_MAN NUMERIC "23"
-// Retrieval info: USED_PORT: add_sub 0 0 0 0 INPUT NODEFVAL "add_sub"
 // Retrieval info: USED_PORT: clk_en 0 0 0 0 INPUT NODEFVAL "clk_en"
 // Retrieval info: USED_PORT: clock 0 0 0 0 INPUT NODEFVAL "clock"
 // Retrieval info: USED_PORT: dataa 0 0 32 0 INPUT NODEFVAL "dataa[31..0]"
 // Retrieval info: USED_PORT: datab 0 0 32 0 INPUT NODEFVAL "datab[31..0]"
 // Retrieval info: USED_PORT: result 0 0 32 0 OUTPUT NODEFVAL "result[31..0]"
-// Retrieval info: CONNECT: @add_sub 0 0 0 0 add_sub 0 0 0 0
 // Retrieval info: CONNECT: @clk_en 0 0 0 0 clk_en 0 0 0 0
 // Retrieval info: CONNECT: @clock 0 0 0 0 clock 0 0 0 0
 // Retrieval info: CONNECT: @dataa 0 0 32 0 dataa 0 0 32 0

@@ -8,7 +8,6 @@ entity task7Timer is
         mult2           : out    vl_logic;
         addsub          : out    vl_logic;
         convert         : out    vl_logic;
-        cordicEn        : out    vl_logic;
         cordicRst       : out    vl_logic
     );
 end task7Timer;

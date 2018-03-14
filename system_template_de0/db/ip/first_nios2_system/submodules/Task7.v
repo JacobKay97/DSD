@@ -14,7 +14,7 @@
 
 // PROGRAM		"Quartus II 64-Bit"
 // VERSION		"Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version"
-// CREATED		"Sun Mar 11 21:11:03 2018"
+// CREATED		"Tue Mar 13 15:13:03 2018"
 
 module Task7(
 	clk,
@@ -30,93 +30,87 @@ input wire	[31:0] dataa;
 output wire	[31:0] dataout;
 
 wire	SYNTHESIZED_WIRE_0;
-wire	SYNTHESIZED_WIRE_1;
-wire	[23:0] SYNTHESIZED_WIRE_2;
-wire	SYNTHESIZED_WIRE_13;
+wire	[27:0] SYNTHESIZED_WIRE_1;
+wire	SYNTHESIZED_WIRE_2;
+wire	SYNTHESIZED_WIRE_3;
+wire	[31:0] SYNTHESIZED_WIRE_4;
 wire	[31:0] SYNTHESIZED_WIRE_5;
 wire	[31:0] SYNTHESIZED_WIRE_6;
-wire	[31:0] SYNTHESIZED_WIRE_7;
-wire	SYNTHESIZED_WIRE_8;
+wire	SYNTHESIZED_WIRE_7;
+wire	[31:0] SYNTHESIZED_WIRE_8;
 wire	[31:0] SYNTHESIZED_WIRE_9;
-wire	[31:0] SYNTHESIZED_WIRE_10;
-wire	SYNTHESIZED_WIRE_11;
-wire	[23:0] SYNTHESIZED_WIRE_12;
-
-assign	dataout = SYNTHESIZED_WIRE_10;
+wire	SYNTHESIZED_WIRE_10;
+wire	[27:0] SYNTHESIZED_WIRE_11;
 
 
 
 
-cordic_dsd	b2v_inst(
+
+cordic_dsd_multirate	b2v_inst(
 	.clk(clk),
 	.rst(SYNTHESIZED_WIRE_0),
-	.en(SYNTHESIZED_WIRE_1),
-	
-	.z(SYNTHESIZED_WIRE_2),
-	
-	.sin_out(SYNTHESIZED_WIRE_12));
-	defparam	b2v_inst.DATA_WIDTH = 24;
+	.z(SYNTHESIZED_WIRE_1),
+	.sin_out(SYNTHESIZED_WIRE_11));
+	defparam	b2v_inst.DATA_WIDTH = 28;
 
 
 altfp_mult0	b2v_inst1(
-	
+	.clk_en(SYNTHESIZED_WIRE_2),
 	.clock(clk),
 	.dataa(dataa),
 	.datab(dataa),
-	.result(SYNTHESIZED_WIRE_9));
+	.result(SYNTHESIZED_WIRE_8));
 
 
 altfp_add_sub0	b2v_inst2(
-	.add_sub(SYNTHESIZED_WIRE_13),
 	.clock(clk),
-	.clk_en(SYNTHESIZED_WIRE_13),
-	.dataa(SYNTHESIZED_WIRE_5),
-	.datab(SYNTHESIZED_WIRE_6)
-	);
+	.clk_en(SYNTHESIZED_WIRE_3),
+	.dataa(SYNTHESIZED_WIRE_4),
+	.datab(SYNTHESIZED_WIRE_5),
+	.result(dataout));
 
 
 cordicWrap	b2v_inst3(
 	.clk(clk),
-	.in(SYNTHESIZED_WIRE_7),
-	.out(SYNTHESIZED_WIRE_2));
+	.in(SYNTHESIZED_WIRE_6),
+	.out(SYNTHESIZED_WIRE_1));
 
 
 divByn	b2v_inst4(
 	.clk(clk),
 	.in(dataa),
-	.out(SYNTHESIZED_WIRE_5));
+	.out(SYNTHESIZED_WIRE_4));
 	defparam	b2v_inst4.num_div = 1;
 
 
 altfp_mult0	b2v_inst5(
-	.clk_en(SYNTHESIZED_WIRE_8),
+	.clk_en(SYNTHESIZED_WIRE_7),
 	.clock(clk),
-	.dataa(SYNTHESIZED_WIRE_9),
-	.datab(SYNTHESIZED_WIRE_10),
-	.result(SYNTHESIZED_WIRE_6));
+	.dataa(SYNTHESIZED_WIRE_8),
+	.datab(SYNTHESIZED_WIRE_9),
+	.result(SYNTHESIZED_WIRE_5));
 
 
 floor	b2v_inst6(
 	.clk(clk),
 	.in(dataa),
-	.out(SYNTHESIZED_WIRE_7));
+	.out(SYNTHESIZED_WIRE_6));
 
 
 altfp_convert0	b2v_inst7(
 	.clock(clk),
-	.clk_en(SYNTHESIZED_WIRE_11),
-	.dataa(SYNTHESIZED_WIRE_12),
-	.result(SYNTHESIZED_WIRE_10));
+	.clk_en(SYNTHESIZED_WIRE_10),
+	.dataa(SYNTHESIZED_WIRE_11),
+	.result(SYNTHESIZED_WIRE_9));
 
 
 task7Timer	b2v_inst8(
 	.clk(clk),
 	.clken(clk_en),
-	
-	.mult2(SYNTHESIZED_WIRE_8),
-	.addsub(SYNTHESIZED_WIRE_13),
-	.convert(SYNTHESIZED_WIRE_11),
-	.cordicEn(SYNTHESIZED_WIRE_1),
+	.mult1(SYNTHESIZED_WIRE_2),
+	.mult2(SYNTHESIZED_WIRE_7),
+	.addsub(SYNTHESIZED_WIRE_3),
+	.convert(SYNTHESIZED_WIRE_10),
 	.cordicRst(SYNTHESIZED_WIRE_0));
 
 

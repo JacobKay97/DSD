@@ -14,11 +14,12 @@
 
 // PROGRAM		"Quartus II 64-Bit"
 // VERSION		"Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version"
-// CREATED		"Thu Feb 22 16:01:23 2018"
+// CREATED		"Mon Mar 12 13:54:04 2018"
 
 module FloatAddSub(
 	clock,
 	add_sub,
+	clk_en,
 	dataa,
 	datab,
 	results
@@ -27,6 +28,7 @@ module FloatAddSub(
 
 input wire	clock;
 input wire	add_sub;
+input wire	clk_en;
 input wire	[31:0] dataa;
 input wire	[31:0] datab;
 output wire	[31:0] results;
@@ -39,6 +41,7 @@ output wire	[31:0] results;
 altfp_add_sub0	b2v_inst(
 	.add_sub(add_sub),
 	.clock(clock),
+	.clk_en(clk_en),
 	.dataa(dataa),
 	.datab(datab),
 	.result(results));

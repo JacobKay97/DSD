@@ -2,7 +2,7 @@ set_global_assignment -entity "first_nios2_system" -library "first_nios2_system"
 set_global_assignment -entity "first_nios2_system" -library "first_nios2_system" -name IP_TOOL_VERSION "13.0sp1"
 set_global_assignment -entity "first_nios2_system" -library "first_nios2_system" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -library "first_nios2_system" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../first_nios2_system.sopcinfo"]
-set_instance_assignment -entity "first_nios2_system" -library "first_nios2_system" -name SLD_INFO "QSYS_NAME first_nios2_system HAS_SOPCINFO 1 GENERATION_ID 1520801304"
+set_instance_assignment -entity "first_nios2_system" -library "first_nios2_system" -name SLD_INFO "QSYS_NAME first_nios2_system HAS_SOPCINFO 1 GENERATION_ID 1521037506"
 set_global_assignment -library "first_nios2_system" -name MISC_FILE [file join $::quartus(qip_path) "../../first_nios2_system.cmp"]
 set_global_assignment -name SYNTHESIS_ONLY_QIP ON
 set_global_assignment -library "first_nios2_system" -name MISC_FILE [file join $::quartus(qip_path) "../../first_nios2_system.qsys"]
@@ -39,16 +39,18 @@ set_global_assignment -library "first_nios2_system" -name SYSTEMVERILOG_FILE [fi
 set_global_assignment -library "first_nios2_system" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_customins_slave_translator.sv"]
 set_global_assignment -library "first_nios2_system" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/first_nios2_system_cpu_custom_instruction_master_multi_xconnect.sv"]
 set_global_assignment -library "first_nios2_system" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_customins_master_translator.v"]
+set_global_assignment -library "first_nios2_system" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/task8.v"]
 set_global_assignment -library "first_nios2_system" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altfp_add_sub0.v"]
-set_global_assignment -library "first_nios2_system" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altfp_convert0.v"]
+set_global_assignment -library "first_nios2_system" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altfp_add_sub1.v"]
 set_global_assignment -library "first_nios2_system" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altfp_mult0.v"]
-set_global_assignment -library "first_nios2_system" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/cordic_dsd.v"]
+set_global_assignment -library "first_nios2_system" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/cordic_dsd_multicycle.v"]
 set_global_assignment -library "first_nios2_system" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/cordicWrap.v"]
+set_global_assignment -library "first_nios2_system" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/div2.v"]
 set_global_assignment -library "first_nios2_system" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/divByn.v"]
-set_global_assignment -library "first_nios2_system" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/FloatAddSub.v"]
-set_global_assignment -library "first_nios2_system" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/FloatMult.v"]
+set_global_assignment -library "first_nios2_system" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/fixedtofloat.v"]
 set_global_assignment -library "first_nios2_system" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/floor.v"]
-set_global_assignment -library "first_nios2_system" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Task7.v"]
+set_global_assignment -library "first_nios2_system" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/task8Timer.v"]
+set_global_assignment -library "first_nios2_system" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/FloatAdd.v"]
 set_global_assignment -library "first_nios2_system" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/first_nios2_system_sdram.v"]
 set_global_assignment -library "first_nios2_system" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/first_nios2_system_led_pio.v"]
 set_global_assignment -library "first_nios2_system" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/first_nios2_system_sysid.v"]

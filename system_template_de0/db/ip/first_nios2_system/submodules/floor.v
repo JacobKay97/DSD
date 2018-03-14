@@ -24,11 +24,11 @@ module floor
 			else
 				out = -32'd32;
 		else begin	
-			if(exp < 9'd23) begin				
+			if(exp <= 9'd23) begin				
 			out = out >> (9'd23 - exp);
 			end
 			else begin
-			out = out << exp;
+			out = out << (exp-9'd23);
 			end
 			if(sign) begin
 				out = ~out - 32'd32;

@@ -1,20 +1,14 @@
 
-State Machine - |hello_world|first_nios2_system:inst|Task7:fptask7_0|task7Timer:b2v_inst8|state
-Name state.00111 state.00110 state.00101 state.00100 state.00011 state.00010 state.00001 state.00000 state.01000 
-state.00000 0 0 0 0 0 0 0 0 0 
-state.00001 0 0 0 0 0 0 1 1 0 
-state.00010 0 0 0 0 0 1 0 1 0 
-state.00011 0 0 0 0 1 0 0 1 0 
-state.00100 0 0 0 1 0 0 0 1 0 
-state.00101 0 0 1 0 0 0 0 1 0 
-state.00110 0 1 0 0 0 0 0 1 0 
-state.00111 1 0 0 0 0 0 0 1 0 
-state.01000 0 0 0 0 0 0 0 1 1 
-
-State Machine - |hello_world|first_nios2_system:inst|Task7:fptask7_0|cordic_dsd:b2v_inst|state
-Name state.iteration 
-state.idle 0 
-state.iteration 1 
+State Machine - |hello_world|first_nios2_system:inst|task8:fptask8_0|task8Timer:b2v_inst10|state
+Name state.0111 state.0110 state.0101 state.0100 state.0011 state.0010 state.0001 state.0000 
+state.0000 0 0 0 0 0 0 0 0 
+state.0001 0 0 0 0 0 0 1 1 
+state.0010 0 0 0 0 0 1 0 1 
+state.0011 0 0 0 0 1 0 0 1 
+state.0100 0 0 0 1 0 0 0 1 
+state.0101 0 0 1 0 0 0 0 1 
+state.0110 0 1 0 0 0 0 0 1 
+state.0111 1 0 0 0 0 0 0 1 
 
 State Machine - |hello_world|first_nios2_system:inst|first_nios2_system_sdram:sdram|m_next
 Name m_next.010000000 m_next.000010000 m_next.000001000 m_next.000000001 

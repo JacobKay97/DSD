@@ -7,7 +7,7 @@ module cordicWrap
 
 	input	clk;
 	input [31:0] in;
-	output reg signed [23:0] out;
+	output reg signed [27:0] out;
 	reg signed [63:0] internal;
 	reg signed [63:0] divisor;
 	localparam pi =    64'b01100100100001111110110101010001000;//11.
@@ -22,14 +22,14 @@ module cordicWrap
 		// cos(-x) = cos(x) so only deal with positive numbers :)
 
 		internal = {in,32'b0};
-		divisor <= (in*oneovertwopi);
+		divisor <= (in*oneovertwopi); //can I move this up??
 		internal = internal - ((divisor[63:32])*twopi);
 		
 		if(internal <= pi)
 		internal = pibytwo - internal;
 		else
 		internal = internal - threepibytwo;
-		out <= internal[34:10];
+		out <= internal[34:6];
 	end
 	
 
