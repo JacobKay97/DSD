@@ -5,11 +5,11 @@
  version="1.0"
  fabric="QSYS">
  <!-- Format version 13.0sp1 232 (Future versions may contain additional information.) -->
- <!-- 2018.03.14.17:21:29 -->
+ <!-- 2018.03.15.22:26:56 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
-  <value>1521048089</value>
+  <value>1521152816</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>
@@ -1456,7 +1456,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="customInstSlavesSystemInfo">
    <type>java.lang.String</type>
-   <value><![CDATA[<info><slave name="fpadd_0" baseAddress="0" addressSpan="1" clockCycleType="MULTICYCLE" /><slave name="fptask8_0" baseAddress="1" addressSpan="1" clockCycleType="MULTICYCLE" /></info>]]></value>
+   <value><![CDATA[<info><slave name="fptask8v2_0" baseAddress="0" addressSpan="256" clockCycleType="VARIABLE" /></info>]]></value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -3020,19 +3020,11 @@ parameters are a RESULT of the module parameters. -->
    </port>
    <customInstruction>
     <isBridge>false</isBridge>
-    <moduleName>FPADD_0</moduleName>
+    <moduleName>FPTask8v2_0</moduleName>
     <slaveName>nios_custom_instruction_slave</slaveName>
-    <name>FPADD_0.nios_custom_instruction_slave</name>
+    <name>FPTask8v2_0.nios_custom_instruction_slave</name>
     <opcodeNumber>0</opcodeNumber>
-    <opcodeMnemonic>fpadd_0</opcodeMnemonic>
-   </customInstruction>
-   <customInstruction>
-    <isBridge>false</isBridge>
-    <moduleName>FPTask8_0</moduleName>
-    <slaveName>nios_custom_instruction_slave</slaveName>
-    <name>FPTask8_0.nios_custom_instruction_slave</name>
-    <opcodeNumber>1</opcodeNumber>
-    <opcodeMnemonic>fptask8_0</opcodeMnemonic>
+    <opcodeMnemonic>fptask8v2_0</opcodeMnemonic>
    </customInstruction>
   </interface>
  </module>
@@ -4457,7 +4449,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.TIMESTAMP</name>
-   <value>1521048089</value>
+   <value>1521152816</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.params.id</name>
@@ -4465,7 +4457,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.dts.params.timestamp</name>
-   <value>1521048089</value>
+   <value>1521152816</value>
   </assignment>
   <parameter name="id">
    <type>int</type>
@@ -4477,7 +4469,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="timestamp">
    <type>int</type>
-   <value>1521048089</value>
+   <value>1521152816</value>
    <derived>false</derived>
    <enabled>false</enabled>
    <visible>false</visible>
@@ -6633,7 +6625,7 @@ parameters are a RESULT of the module parameters. -->
    </port>
   </interface>
  </module>
- <module name="FPADD_0" kind="FPADD" version="0.1" path="FPADD_0">
+ <module name="FPTask8v2_0" kind="FPTask8v2" version="0.1" path="FPTask8v2_0">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
   <parameter name="deviceFamily">
@@ -6669,7 +6661,7 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="NPort">
     <type>int</type>
-    <value>0</value>
+    <value>8</value>
     <derived>true</derived>
     <enabled>true</enabled>
     <visible>false</visible>
@@ -6677,15 +6669,15 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="clockCycle">
     <type>int</type>
-    <value>8</value>
+    <value>0</value>
     <derived>false</derived>
-    <enabled>true</enabled>
+    <enabled>false</enabled>
     <visible>true</visible>
     <valid>true</valid>
    </parameter>
    <parameter name="clockCycleType">
     <type>com.altera.sopcmodel.custominstruction.CustomInstruction$ClockCycleType</type>
-    <value>MULTICYCLE</value>
+    <value>VARIABLE</value>
     <derived>true</derived>
     <enabled>true</enabled>
     <visible>true</visible>
@@ -6748,146 +6740,6 @@ parameters are a RESULT of the module parameters. -->
     <role>clk</role>
    </port>
    <port>
-    <name>result</name>
-    <direction>Output</direction>
-    <width>32</width>
-    <role>result</role>
-   </port>
-   <port>
-    <name>datab</name>
-    <direction>Input</direction>
-    <width>32</width>
-    <role>datab</role>
-   </port>
-   <port>
-    <name>dataa</name>
-    <direction>Input</direction>
-    <width>32</width>
-    <role>dataa</role>
-   </port>
-   <port>
-    <name>clken</name>
-    <direction>Input</direction>
-    <width>1</width>
-    <role>clk_en</role>
-   </port>
-  </interface>
- </module>
- <module name="FPTask8_0" kind="FPTask8" version="0.1" path="FPTask8_0">
-  <!-- Describes a single module. Module parameters are
-the requested settings for a module instance. -->
-  <parameter name="deviceFamily">
-   <type>java.lang.String</type>
-   <value>UNKNOWN</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="generateLegacySim">
-   <type>boolean</type>
-   <value>false</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <interface
-     name="nios_custom_instruction_slave"
-     kind="nios_custom_instruction_slave"
-     version="13.0">
-   <!-- The connection points exposed by a module instance for the
-particular module parameters. Connection points and their
-parameters are a RESULT of the module parameters. -->
-   <parameter name="CIName">
-    <type>java.lang.String</type>
-    <value></value>
-    <derived>true</derived>
-    <enabled>true</enabled>
-    <visible>false</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="NPort">
-    <type>int</type>
-    <value>0</value>
-    <derived>true</derived>
-    <enabled>true</enabled>
-    <visible>false</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="clockCycle">
-    <type>int</type>
-    <value>33</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>true</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="clockCycleType">
-    <type>com.altera.sopcmodel.custominstruction.CustomInstruction$ClockCycleType</type>
-    <value>MULTICYCLE</value>
-    <derived>true</derived>
-    <enabled>true</enabled>
-    <visible>true</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="opcodeExtension">
-    <type>int</type>
-    <value>0</value>
-    <derived>true</derived>
-    <enabled>true</enabled>
-    <visible>false</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="opcodeExtensionLocked">
-    <type>boolean</type>
-    <value>false</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>false</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="opcodeExtensionLockedValue">
-    <type>int</type>
-    <value>0</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>false</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="operands">
-    <type>int</type>
-    <value>1</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>true</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="deviceFamily">
-    <type>java.lang.String</type>
-    <value>UNKNOWN</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>true</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="generateLegacySim">
-    <type>boolean</type>
-    <value>false</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>true</visible>
-    <valid>true</valid>
-   </parameter>
-   <type>nios_custom_instruction</type>
-   <isStart>false</isStart>
-   <port>
-    <name>clk</name>
-    <direction>Input</direction>
-    <width>1</width>
-    <role>clk</role>
-   </port>
-   <port>
     <name>clk_en</name>
     <direction>Input</direction>
     <width>1</width>
@@ -6900,10 +6752,28 @@ parameters are a RESULT of the module parameters. -->
     <role>dataa</role>
    </port>
    <port>
+    <name>datab</name>
+    <direction>Input</direction>
+    <width>32</width>
+    <role>datab</role>
+   </port>
+   <port>
     <name>dataout</name>
     <direction>Output</direction>
     <width>32</width>
     <role>result</role>
+   </port>
+   <port>
+    <name>n</name>
+    <direction>Input</direction>
+    <width>8</width>
+    <role>n</role>
+   </port>
+   <port>
+    <name>done</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>done</role>
    </port>
   </interface>
  </module>
@@ -7710,14 +7580,14 @@ parameters are a RESULT of the module parameters. -->
   <endConnectionPoint>s1</endConnectionPoint>
  </connection>
  <connection
-   name="cpu.custom_instruction_master/FPADD_0.nios_custom_instruction_slave"
+   name="cpu.custom_instruction_master/FPTask8v2_0.nios_custom_instruction_slave"
    kind="nios_custom_instruction"
    version="13.0"
    start="cpu.custom_instruction_master"
-   end="FPADD_0.nios_custom_instruction_slave">
+   end="FPTask8v2_0.nios_custom_instruction_slave">
   <parameter name="CIName">
    <type>java.lang.String</type>
-   <value>fpadd_0</value>
+   <value>fptask8v2_0</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -7773,106 +7643,15 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <startModule>cpu</startModule>
   <startConnectionPoint>custom_instruction_master</startConnectionPoint>
-  <endModule>FPADD_0</endModule>
+  <endModule>FPTask8v2_0</endModule>
   <endConnectionPoint>nios_custom_instruction_slave</endConnectionPoint>
  </connection>
- <connection
-   name="cpu.custom_instruction_master/FPTask8_0.nios_custom_instruction_slave"
-   kind="nios_custom_instruction"
-   version="13.0"
-   start="cpu.custom_instruction_master"
-   end="FPTask8_0.nios_custom_instruction_slave">
-  <parameter name="CIName">
-   <type>java.lang.String</type>
-   <value>fptask8_0</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="CINameUpgrade">
-   <type>java.lang.String</type>
-   <value></value>
-   <derived>true</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="arbitrationPriority">
-   <type>int</type>
-   <value>1</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>false</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="baseAddress">
-   <type>long</type>
-   <value>1</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="opcodeExtensionUpgrade">
-   <type>int</type>
-   <value>-1</value>
-   <derived>true</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="deviceFamily">
-   <type>java.lang.String</type>
-   <value>UNKNOWN</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="generateLegacySim">
-   <type>boolean</type>
-   <value>false</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <startModule>cpu</startModule>
-  <startConnectionPoint>custom_instruction_master</startConnectionPoint>
-  <endModule>FPTask8_0</endModule>
-  <endConnectionPoint>nios_custom_instruction_slave</endConnectionPoint>
- </connection>
- <plugin>
-  <instanceCount>6</instanceCount>
-  <name>reset</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IConnection</subtype>
-  <displayName>Reset Connection</displayName>
-  <version>13.0</version>
- </plugin>
  <plugin>
   <instanceCount>1</instanceCount>
-  <name>clock_sink</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
-  <displayName>Clock Input</displayName>
-  <version>13.0</version>
- </plugin>
- <plugin>
-  <instanceCount>2</instanceCount>
-  <name>conduit_end</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
-  <displayName>Conduit</displayName>
-  <version>13.0</version>
- </plugin>
- <plugin>
-  <instanceCount>2</instanceCount>
-  <name>interrupt</name>
+  <name>nios_custom_instruction</name>
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IConnection</subtype>
-  <displayName>Interrupt Connection</displayName>
+  <displayName>Nios II Custom Instruction Connection</displayName>
   <version>13.0</version>
  </plugin>
  <plugin>
@@ -7885,18 +7664,10 @@ parameters are a RESULT of the module parameters. -->
  </plugin>
  <plugin>
   <instanceCount>1</instanceCount>
-  <name>clock_source</name>
+  <name>altera_avalon_sysid_qsys</name>
   <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
-  <displayName>Clock Output</displayName>
-  <version>13.0</version>
- </plugin>
- <plugin>
-  <instanceCount>1</instanceCount>
-  <name>reset_source</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
-  <displayName>Reset Output</displayName>
+  <subtype>com.altera.entityinterfaces.IModule</subtype>
+  <displayName>System ID Peripheral</displayName>
   <version>13.0</version>
  </plugin>
  <plugin>
@@ -7908,20 +7679,12 @@ parameters are a RESULT of the module parameters. -->
   <version>13.0.1.99.2</version>
  </plugin>
  <plugin>
-  <instanceCount>6</instanceCount>
-  <name>clock</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IConnection</subtype>
-  <displayName>Clock Connection</displayName>
-  <version>13.0</version>
- </plugin>
- <plugin>
   <instanceCount>1</instanceCount>
-  <name>altera_avalon_pio</name>
+  <name>FPTask8v2</name>
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>PIO (Parallel I/O)</displayName>
-  <version>13.0.1.99.2</version>
+  <displayName>FPTask8v2</displayName>
+  <version>0.1</version>
  </plugin>
  <plugin>
   <instanceCount>1</instanceCount>
@@ -7933,42 +7696,26 @@ parameters are a RESULT of the module parameters. -->
  </plugin>
  <plugin>
   <instanceCount>1</instanceCount>
-  <name>altera_nios2_qsys</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>Nios II Processor</displayName>
-  <version>13.0</version>
- </plugin>
- <plugin>
-  <instanceCount>1</instanceCount>
-  <name>interrupt_receiver</name>
+  <name>nios_custom_instruction_slave</name>
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
-  <displayName>Interrupt Receiver</displayName>
-  <version>13.0</version>
- </plugin>
- <plugin>
-  <instanceCount>1</instanceCount>
-  <name>reset_sink</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
-  <displayName>Reset Input</displayName>
+  <displayName>Custom Instruction Slave</displayName>
   <version>13.0</version>
  </plugin>
  <plugin>
   <instanceCount>6</instanceCount>
-  <name>clock_sink</name>
+  <name>avalon_slave</name>
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
-  <displayName>Clock Input</displayName>
+  <displayName>Avalon Memory Mapped Slave</displayName>
   <version>13.0</version>
  </plugin>
  <plugin>
-  <instanceCount>6</instanceCount>
-  <name>reset_sink</name>
+  <instanceCount>8</instanceCount>
+  <name>avalon</name>
   <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
-  <displayName>Reset Input</displayName>
+  <subtype>com.altera.entityinterfaces.IConnection</subtype>
+  <displayName>Avalon Memory Mapped Connection</displayName>
   <version>13.0</version>
  </plugin>
  <plugin>
@@ -7977,22 +7724,6 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
   <displayName>Custom Instruction Master</displayName>
-  <version>13.0</version>
- </plugin>
- <plugin>
-  <instanceCount>1</instanceCount>
-  <name>FPTask8</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>FPTask8</displayName>
-  <version>0.1</version>
- </plugin>
- <plugin>
-  <instanceCount>6</instanceCount>
-  <name>avalon_slave</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
-  <displayName>Avalon Memory Mapped Slave</displayName>
   <version>13.0</version>
  </plugin>
  <plugin>
@@ -8012,44 +7743,92 @@ parameters are a RESULT of the module parameters. -->
   <version>13.0</version>
  </plugin>
  <plugin>
-  <instanceCount>1</instanceCount>
-  <name>clock_source</name>
+  <instanceCount>6</instanceCount>
+  <name>reset_sink</name>
   <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>Clock Source</displayName>
+  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
+  <displayName>Reset Input</displayName>
+  <version>13.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>6</instanceCount>
+  <name>reset</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IConnection</subtype>
+  <displayName>Reset Connection</displayName>
   <version>13.0</version>
  </plugin>
  <plugin>
   <instanceCount>2</instanceCount>
-  <name>nios_custom_instruction</name>
+  <name>conduit_end</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
+  <displayName>Conduit</displayName>
+  <version>13.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>6</instanceCount>
+  <name>clock_sink</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
+  <displayName>Clock Input</displayName>
+  <version>13.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>2</instanceCount>
+  <name>interrupt</name>
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IConnection</subtype>
-  <displayName>Nios II Custom Instruction Connection</displayName>
+  <displayName>Interrupt Connection</displayName>
+  <version>13.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>6</instanceCount>
+  <name>clock</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IConnection</subtype>
+  <displayName>Clock Connection</displayName>
   <version>13.0</version>
  </plugin>
  <plugin>
   <instanceCount>1</instanceCount>
-  <name>altera_avalon_sysid_qsys</name>
+  <name>reset_sink</name>
   <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>System ID Peripheral</displayName>
-  <version>13.0</version>
- </plugin>
- <plugin>
-  <instanceCount>8</instanceCount>
-  <name>avalon</name>
-  <type>com.altera.entityinterfaces.IElementClass</type>
-  <subtype>com.altera.entityinterfaces.IConnection</subtype>
-  <displayName>Avalon Memory Mapped Connection</displayName>
+  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
+  <displayName>Reset Input</displayName>
   <version>13.0</version>
  </plugin>
  <plugin>
   <instanceCount>1</instanceCount>
-  <name>FPADD</name>
+  <name>interrupt_receiver</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
+  <displayName>Interrupt Receiver</displayName>
+  <version>13.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>1</instanceCount>
+  <name>altera_nios2_qsys</name>
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>FPADD</displayName>
-  <version>0.1</version>
+  <displayName>Nios II Processor</displayName>
+  <version>13.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>1</instanceCount>
+  <name>altera_avalon_pio</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IModule</subtype>
+  <displayName>PIO (Parallel I/O)</displayName>
+  <version>13.0.1.99.2</version>
+ </plugin>
+ <plugin>
+  <instanceCount>1</instanceCount>
+  <name>clock_sink</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
+  <displayName>Clock Input</displayName>
+  <version>13.0</version>
  </plugin>
  <plugin>
   <instanceCount>2</instanceCount>
@@ -8060,11 +7839,27 @@ parameters are a RESULT of the module parameters. -->
   <version>13.0</version>
  </plugin>
  <plugin>
-  <instanceCount>2</instanceCount>
-  <name>nios_custom_instruction_slave</name>
+  <instanceCount>1</instanceCount>
+  <name>reset_source</name>
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
-  <displayName>Custom Instruction Slave</displayName>
+  <displayName>Reset Output</displayName>
+  <version>13.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>1</instanceCount>
+  <name>clock_source</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
+  <displayName>Clock Output</displayName>
+  <version>13.0</version>
+ </plugin>
+ <plugin>
+  <instanceCount>1</instanceCount>
+  <name>clock_source</name>
+  <type>com.altera.entityinterfaces.IElementClass</type>
+  <subtype>com.altera.entityinterfaces.IModule</subtype>
+  <displayName>Clock Source</displayName>
   <version>13.0</version>
  </plugin>
  <reportVersion>13.0sp1 232</reportVersion>

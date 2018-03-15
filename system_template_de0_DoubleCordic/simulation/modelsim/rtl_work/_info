@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dH:\Year_3\DSD\system_template_de0\simulation\modelsim
+Ealtpll0
+Z1 w1516972070
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dH:\Year_3\DSD\system_template_de0\simulation\modelsim
+Z5 8H:/Year_3/DSD/system_template_de0/altpll0.vhd
+Z6 FH:/Year_3/DSD/system_template_de0/altpll0.vhd
+l0
+L42
+Va<N@b?^=XUDghdDG2=D1>0
+!s100 deVYN=A:R7gPYO`H0i7hd3
+Z7 OV;C;10.1d;51
+31
+!i10b 1
+Z8 !s108 1520794746.251000
+Z9 !s90 -reportprogress|300|-93|-work|work|H:/Year_3/DSD/system_template_de0/altpll0.vhd|
+Z10 !s107 H:/Year_3/DSD/system_template_de0/altpll0.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+Asyn
+R2
+R3
+DEx4 work 7 altpll0 0 22 a<N@b?^=XUDghdDG2=D1>0
+l137
+L54
+VVfI6nN_Sa`LTHcjT8WR4d0
+!s100 XN?:NkcY@hZeiS0j82jnN2
+R7
+31
+!i10b 1
+R8
+R9
+R10
+R11
+R12
+valtpll0_altpll
+IbBmczggl5MPN?nfb1GgE53
+VbmOFXHjhheB>Iagza_8dB0
+R4
+w1516972115
+8H:/Year_3/DSD/system_template_de0/db/altpll0_altpll.v
+FH:/Year_3/DSD/system_template_de0/db/altpll0_altpll.v
+L0 30
+Z13 OV;L;10.1d;51
+r1
+31
+Z14 o-vlog01compat -work work -O0
+!i10b 1
+!s100 J6^:JD>EJTT^9=GO]kUa]0
+!s85 0
+!s108 1520794731.058000
+!s107 H:/Year_3/DSD/system_template_de0/db/altpll0_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/Year_3/DSD/system_template_de0/db|H:/Year_3/DSD/system_template_de0/db/altpll0_altpll.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+H:/Year_3/DSD/system_template_de0/db -O0
+vtask7Timer
+Idn45Jk_z:WnNWL_=JD4=41
+VZYCjXLQZSO4_iZ8iI8N`?3
+R4
+w1520621563
+8H:/Year_3/DSD/system_template_de0/ip/task7Timer.v
+FH:/Year_3/DSD/system_template_de0/ip/task7Timer.v
+L0 1
+R13
+r1
+31
+R14
+ntask7@timer
+!i10b 1
+!s100 05<^DJ^?48PonofOC7U@Y0
+!s85 0
+!s108 1520794730.876000
+!s107 H:/Year_3/DSD/system_template_de0/ip/task7Timer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/Year_3/DSD/system_template_de0/ip|H:/Year_3/DSD/system_template_de0/ip/task7Timer.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+H:/Year_3/DSD/system_template_de0/ip -O0

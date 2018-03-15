@@ -1,0 +1,19 @@
+
+**** Build of configuration Nios II for project Task8Test2 ****
+
+make all 
+Info: Building ../Task8Test2_bsp/
+make --no-print-directory -C ../Task8Test2_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Task8Test2_bsp//HAL/inc -I../Task8Test2_bsp/ -I../Task8Test2_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O3 -g -Wall   -EL -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+Info: Linking Task8Test2.elf
+nios2-elf-g++  -T'../Task8Test2_bsp//linker.x' -msys-crt0='../Task8Test2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Task8Test2_bsp/   -Wl,-Map=Task8Test2.map   -O3 -g -Wall   -EL -mno-hw-div -mhw-mul -mno-hw-mulx  -o Task8Test2.elf obj/default/hello_world.o -lm 
+nios2-elf-insert Task8Test2.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x1001030 --timestamp 1521152816 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name first_nios2_system --quartus_project_dir "H:/Year_3/DSD/system_template_de0" --jdi H:/Year_3/DSD/system_template_de0/hello_world.jdi --sopcinfo H:/Year_3/DSD/system_template_de0/first_nios2_system.sopcinfo
+Info: (Task8Test2.elf) 57 KBytes program size (code + initialized data).
+Info:                  8127 KBytes free for stack + heap.
+Info: Creating Task8Test2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Task8Test2.elf >Task8Test2.objdump
+[Task8Test2 build complete]
+
+**** Build Finished ****

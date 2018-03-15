@@ -33,7 +33,7 @@
 //applicable agreement for further details.
 
 
-//altfp_add_sub CBX_AUTO_BLACKBOX="ALL" DENORMAL_SUPPORT="NO" DEVICE_FAMILY="Cyclone III" DIRECTION="ADD" OPTIMIZE="AREA" PIPELINE=7 REDUCED_FUNCTIONALITY="NO" WIDTH_EXP=8 WIDTH_MAN=23 clk_en clock dataa datab result
+//altfp_add_sub CBX_AUTO_BLACKBOX="ALL" DENORMAL_SUPPORT="NO" DEVICE_FAMILY="Cyclone III" DIRECTION="ADD" OPTIMIZE="AREA" PIPELINE=7 REDUCED_FUNCTIONALITY="NO" WIDTH_EXP=8 WIDTH_MAN=23 aclr clk_en clock dataa datab result
 //VERSION_BEGIN 13.0 cbx_altbarrel_shift 2013:06:12:18:03:43:SJ cbx_altfp_add_sub 2013:06:12:18:03:43:SJ cbx_altpriority_encoder 2013:06:12:18:03:43:SJ cbx_cycloneii 2013:06:12:18:03:43:SJ cbx_lpm_add_sub 2013:06:12:18:03:43:SJ cbx_lpm_compare 2013:06:12:18:03:43:SJ cbx_mgl 2013:06:12:18:05:10:SJ cbx_stratix 2013:06:12:18:03:43:SJ cbx_stratixii 2013:06:12:18:03:43:SJ  VERSION_END
 // synthesis VERILOG_INPUT_VERSION VERILOG_2001
 // altera message_off 10463
@@ -706,13 +706,15 @@ endmodule //altfp_add_sub0_altpriority_encoder_e48
 //synopsys translate_off
 `timescale 1 ps / 1 ps
 //synopsys translate_on
-module  altfp_add_sub0_altfp_add_sub_gkj
+module  altfp_add_sub0_altfp_add_sub_i2k
 	( 
+	aclr,
 	clk_en,
 	clock,
 	dataa,
 	datab,
 	result) ;
+	input   aclr;
 	input   clk_en;
 	input   clock;
 	input   [31:0]  dataa;
@@ -721,6 +723,7 @@ module  altfp_add_sub0_altfp_add_sub_gkj
 `ifndef ALTERA_RESERVED_QIS
 // synopsys translate_off
 `endif
+	tri0   aclr;
 	tri1   clk_en;
 `ifndef ALTERA_RESERVED_QIS
 // synopsys translate_on
@@ -804,7 +807,6 @@ module  altfp_add_sub0_altfp_add_sub_gkj
 	wire  [25:0]   wire_add_sub8_result;
 	wire  [8:0]   wire_add_sub9_result;
 	wire  wire_trailing_zeros_limit_comparator_agb;
-	wire aclr;
 	wire  add_sub_dffe25_wi;
 	wire  add_sub_dffe25_wo;
 	wire  add_sub_w2;
@@ -2012,7 +2014,6 @@ module  altfp_add_sub0_altfp_add_sub_gkj
 		trailing_zeros_limit_comparator.lpm_width = 6,
 		trailing_zeros_limit_comparator.lpm_type = "lpm_compare";
 	assign
-		aclr = 1'b0,
 		add_sub_dffe25_wi = add_sub_w2,
 		add_sub_dffe25_wo = add_sub_dffe25_wi,
 		add_sub_w2 = (~ (dataa_sign_dffe1_wo ^ datab_sign_dffe1_wo)),
@@ -2512,7 +2513,7 @@ module  altfp_add_sub0_altfp_add_sub_gkj
 		zero_man_sign_dffe27_wo = zero_man_sign_dffe27_wi,
 		zero_man_sign_dffe2_wi = (dataa_sign_dffe25_wo & add_sub_dffe25_wo),
 		zero_man_sign_dffe2_wo = zero_man_sign_dffe2;
-endmodule //altfp_add_sub0_altfp_add_sub_gkj
+endmodule //altfp_add_sub0_altfp_add_sub_i2k
 //VALID FILE
 
 
@@ -2520,12 +2521,14 @@ endmodule //altfp_add_sub0_altfp_add_sub_gkj
 `timescale 1 ps / 1 ps
 // synopsys translate_on
 module altfp_add_sub0 (
+	aclr,
 	clk_en,
 	clock,
 	dataa,
 	datab,
 	result);
 
+	input	  aclr;
 	input	  clk_en;
 	input	  clock;
 	input	[31:0]  dataa;
@@ -2535,7 +2538,8 @@ module altfp_add_sub0 (
 	wire [31:0] sub_wire0;
 	wire [31:0] result = sub_wire0[31:0];
 
-	altfp_add_sub0_altfp_add_sub_gkj	altfp_add_sub0_altfp_add_sub_gkj_component (
+	altfp_add_sub0_altfp_add_sub_i2k	altfp_add_sub0_altfp_add_sub_i2k_component (
+				.aclr (aclr),
 				.clk_en (clk_en),
 				.clock (clock),
 				.datab (datab),
@@ -2560,11 +2564,13 @@ endmodule
 // Retrieval info: CONSTANT: REDUCED_FUNCTIONALITY STRING "NO"
 // Retrieval info: CONSTANT: WIDTH_EXP NUMERIC "8"
 // Retrieval info: CONSTANT: WIDTH_MAN NUMERIC "23"
+// Retrieval info: USED_PORT: aclr 0 0 0 0 INPUT NODEFVAL "aclr"
 // Retrieval info: USED_PORT: clk_en 0 0 0 0 INPUT NODEFVAL "clk_en"
 // Retrieval info: USED_PORT: clock 0 0 0 0 INPUT NODEFVAL "clock"
 // Retrieval info: USED_PORT: dataa 0 0 32 0 INPUT NODEFVAL "dataa[31..0]"
 // Retrieval info: USED_PORT: datab 0 0 32 0 INPUT NODEFVAL "datab[31..0]"
 // Retrieval info: USED_PORT: result 0 0 32 0 OUTPUT NODEFVAL "result[31..0]"
+// Retrieval info: CONNECT: @aclr 0 0 0 0 aclr 0 0 0 0
 // Retrieval info: CONNECT: @clk_en 0 0 0 0 clk_en 0 0 0 0
 // Retrieval info: CONNECT: @clock 0 0 0 0 clock 0 0 0 0
 // Retrieval info: CONNECT: @dataa 0 0 32 0 dataa 0 0 32 0

@@ -1,0 +1,10 @@
+
+**** Build of configuration Nios II for project Task8Test4 ****
+
+make all 
+Info: Building ../Task8Test4_bsp/
+make --no-print-directory -C ../Task8Test4_bsp/
+[BSP build complete]
+[Task8Test4 build complete]
+
+**** Build Finished ****
